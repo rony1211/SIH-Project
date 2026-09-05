@@ -95,7 +95,7 @@ export default function AcquisitionChart({ title }: AcquisitionChartProps) {
             />
             <Legend wrapperStyle={{ color: tickColor, fontSize: '12px' }} />
             <Bar dataKey="notified" name="Notified" fill="#F97316" radius={[6, 6, 0, 0]} opacity={0.85} />
-            <Bar dataKey="acquired" name="Acquired" radius={[6, 6, 0, 0]}>
+            <Bar dataKey="acquired" name="Acquired" fill="#10B981" radius={[6, 6, 0, 0]}>
               {data.map((entry, index) => (
                 <Cell 
                   key={`cell-${index}`} 
