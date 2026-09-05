@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
 
 /* Light mode defaults */
 :root {
@@ -36,6 +37,14 @@
   --glass-dark-border: rgba(255, 255, 255, 0.06);
   --table-hover: rgba(255, 255, 255, 0.04);
   --chart-grid: rgba(255, 255, 255, 0.06);
+}
+
+/* Leaflet Dark Mode Inversion */
+.dark .leaflet-layer,
+.dark .leaflet-control-zoom-in,
+.dark .leaflet-control-zoom-out,
+.dark .leaflet-control-attribution {
+  filter: invert(1) hue-rotate(180deg) brightness(95%) contrast(90%);
 }
 
 @theme inline {
