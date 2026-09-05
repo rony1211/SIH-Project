@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 *AI Agents: Please document your work here before making your final commits.*
 
 ### Added
+- Real backend API endpoint (`app/api/parcels/route.ts`) serving GeoJSON-like parcel data.
+- Refactored `MapViewer.tsx` to fetch map polygons from the real API rather than using static constants.
 - Phase 5: Geospatial Map Viewer (`app/map/page.tsx` & `components/map/MapViewer.tsx`) with Leaflet integration, dark mode tile filters, and simulated land parcel polygon overlays (Acquired, Notified, Disputed).
 - `.agents/rules/agent_guidelines.md` to ensure AI agents follow tech constraints and maintain this changelog.
 - `README.md` for project overview and startup instructions.

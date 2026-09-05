@@ -22,45 +22,6 @@ interface Parcel {
   coordinates: [number, number][];
 }
 
-const mockParcels: Parcel[] = [
-  {
-    id: 'P-101',
-    owner: 'Ramesh Patel',
-    area: '2.5 Ha',
-    status: 'acquired',
-    coordinates: [
-      [23.0225, 72.5714],
-      [23.0250, 72.5714],
-      [23.0250, 72.5750],
-      [23.0225, 72.5750],
-    ],
-  },
-  {
-    id: 'P-102',
-    owner: 'Suresh Kumar',
-    area: '1.2 Ha',
-    status: 'notified',
-    coordinates: [
-      [23.0250, 72.5714],
-      [23.0270, 72.5714],
-      [23.0270, 72.5740],
-      [23.0250, 72.5750],
-    ],
-  },
-  {
-    id: 'P-103',
-    owner: 'Gram Panchayat (Overlap)',
-    area: '0.8 Ha',
-    status: 'disputed',
-    coordinates: [
-      [23.0260, 72.5730],
-      [23.0280, 72.5730],
-      [23.0280, 72.5760],
-      [23.0260, 72.5760],
-    ],
-  },
-];
-
 const getStatusColor = (status: Parcel['status']) => {
   switch (status) {
     case 'acquired': return '#10B981'; // Emerald
@@ -72,15 +33,35 @@ const getStatusColor = (status: Parcel['status']) => {
 
 export default function MapViewer() {
   const [mounted, setMounted] = useState(false);
+  const [parcels, setParcels] = useState<Parcel[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     initLeaflet();
     setMounted(true);
+
+    // Fetch data from real API
+    const fetchParcels = async () => {
+      try {
+        const response = await fetch('/api/parcels');
+        const result = await response.json();
+        if (result.success) {
+          setParcels(result.data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch parcels:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchParcels();
   }, []);
 
-  if (!mounted) return (
-    <div className="w-full h-full flex items-center justify-center bg-black/5 dark:bg-white/5 rounded-2xl animate-pulse">
-      <p className="text-muted font-medium">Loading Map Data...</p>
+  if (!mounted || loading) return (
+    <div className="w-full h-full flex flex-col items-center justify-center bg-black/5 dark:bg-white/5 rounded-2xl animate-pulse">
+      <div className="w-10 h-10 border-4 border-saffron border-t-transparent rounded-full animate-spin mb-4" />
+      <p className="text-muted font-medium">Loading Map Data via API...</p>
     </div>
   );
 
@@ -88,7 +69,7 @@ export default function MapViewer() {
     <div className="w-full h-full rounded-2xl overflow-hidden relative shadow-inner">
       <MapContainer 
         center={[23.0250, 72.5730]} 
-        zoom={15} 
+        zoom={14} 
         style={{ height: '100%', width: '100%', background: 'transparent' }}
         zoomControl={false}
       >
@@ -98,7 +79,7 @@ export default function MapViewer() {
           className="map-tiles"
         />
         
-        {mockParcels.map(parcel => (
+        {parcels.map(parcel => (
           <Polygon 
             key={parcel.id}
             positions={parcel.coordinates}
