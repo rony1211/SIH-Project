@@ -2,13 +2,15 @@
 
 import { useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLocale } from '@/components/providers/LocaleProvider';
 import {
   HiOutlineChartBarSquare, HiOutlineMap, HiOutlineUserGroup,
   HiOutlineDocumentText, HiOutlineDevicePhoneMobile, HiOutlineShieldCheck,
-  HiOutlineBolt, HiOutlineGlobeAlt
+  HiOutlineBolt, HiOutlineGlobeAlt, HiPlay
 } from 'react-icons/hi2';
+import AcquisitionChart from '@/components/dashboard/AcquisitionChart';
+import RecentActivity from '@/components/dashboard/RecentActivity';
 
 // Animated counter component
 function AnimatedCounter({ end, duration = 2, suffix = '' }: { end: number; duration?: number; suffix?: string }) {
@@ -55,76 +57,134 @@ const features = [
 
 export default function HomePage() {
   const { t } = useLocale();
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <div className="relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[-200px] left-[-200px] w-[600px] h-[600px] rounded-full 
-          bg-gradient-to-br from-saffron/15 to-transparent blur-3xl animate-[float_6s_ease-in-out_infinite]" />
-        <div className="absolute bottom-[-100px] right-[-100px] w-[500px] h-[500px] rounded-full 
-          bg-gradient-to-br from-emerald/10 to-transparent blur-3xl animate-[float_8s_ease-in-out_infinite_1s]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full 
-          bg-gradient-to-br from-royal/5 to-transparent blur-3xl" />
+    <div className="relative overflow-hidden bg-background min-h-screen">
+      {/* Cinematic Animated Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full 
+          bg-gradient-to-br from-saffron/20 to-transparent blur-[120px] animate-[pulse_8s_ease-in-out_infinite]" />
+        <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] rounded-full 
+          bg-gradient-to-br from-emerald/15 to-transparent blur-[120px] animate-[pulse_10s_ease-in-out_infinite_1s]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] rounded-full 
+          bg-gradient-to-br from-royal/5 to-transparent blur-[150px]" />
       </div>
 
       {/* Hero Section */}
-      <section className="relative px-6 py-20 md:py-32 max-w-6xl mx-auto text-center">
+      <section className="relative px-6 pt-24 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="z-10 relative"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full 
-            bg-saffron/10 border border-saffron/20 text-saffron text-xs font-medium mb-8">
-            <HiOutlineBolt className="w-3.5 h-3.5" />
-            SIH 2026 • Ministry of Rural Development
-          </div>
+          <motion.div 
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full 
+              bg-saffron/10 border border-saffron/20 text-saffron text-xs font-medium mb-8"
+          >
+            <HiOutlineBolt className="w-4 h-4 animate-pulse" />
+            <span className="tracking-wide uppercase">Live on National Server</span>
+          </motion.div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            <span className="bg-gradient-to-r from-saffron via-white to-emerald 
-              bg-clip-text text-transparent">
-              {t('hero', 'heading')}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.1] mb-6">
+            <span className="bg-gradient-to-b from-foreground to-muted bg-clip-text text-transparent block">
+              Digital Land
+            </span>
+            <span className="bg-gradient-to-r from-saffron via-emerald to-royal bg-clip-text text-transparent">
+              Acquisition & Management
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted max-w-3xl mx-auto mb-12 leading-relaxed">
             {t('hero', 'description')}
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-24">
             <Link
               href="/dashboard"
-              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-saffron to-orange-600 
-                text-white font-semibold text-lg shadow-lg shadow-saffron/25
-                hover:shadow-saffron/40 hover:scale-105 transition-all duration-300"
+              className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-saffron to-orange-600 
+                text-white font-semibold text-lg overflow-hidden transition-all duration-300
+                hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:-translate-y-1"
             >
-              {t('hero', 'cta_dashboard')}
+              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
+              <span className="relative flex items-center gap-2">
+                {t('hero', 'cta_dashboard')}
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
             </Link>
+            
             <Link
               href="/projects"
-              className="px-8 py-4 rounded-2xl border border-white/20 
-                text-white font-semibold text-lg
-                hover:bg-white/5 hover:border-white/30 hover:scale-105 transition-all duration-300"
+              className="px-8 py-4 rounded-2xl border border-black/10 dark:border-white/20 
+                text-heading font-semibold text-lg glass
+                hover:bg-black/5 dark:hover:bg-white/5 hover:border-black/20 dark:hover:border-white/30 
+                hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
             >
-              {t('hero', 'cta_projects')}
+              <HiPlay className="w-5 h-5 text-emerald" />
+              Watch Demo
             </Link>
+          </div>
+        </motion.div>
+
+        {/* Live Cinematic Dashboard Preview (3D Perspective) */}
+        <motion.div 
+          initial={{ opacity: 0, y: 100, rotateX: 25, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, rotateX: 10, scale: 1 }}
+          transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
+          style={{ perspective: 2000, y }}
+          className="relative max-w-6xl mx-auto"
+        >
+          {/* Glow Behind Dashboard */}
+          <div className="absolute inset-0 bg-gradient-to-t from-saffron/20 to-emerald/20 blur-[100px] -z-10" />
+          
+          <div className="rounded-3xl border border-black/10 dark:border-white/10 glass-dark p-2 md:p-6 shadow-2xl shadow-black/50 overflow-hidden relative">
+            
+            {/* Browser Header Mock */}
+            <div className="flex items-center gap-2 mb-4 px-2">
+              <div className="w-3 h-3 rounded-full bg-red-500/80" />
+              <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+              <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
+              <div className="mx-auto bg-black/5 dark:bg-white/5 px-4 py-1 rounded-md text-xs text-muted flex items-center gap-2 font-mono">
+                <HiOutlineGlobeAlt className="w-3 h-3" />
+                bhumisetu.gov.in/live-monitor
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-4 pointer-events-none opacity-90 scale-95 origin-top">
+              <div className="md:col-span-2">
+                <AcquisitionChart title="Live: Notified vs Acquired (Today)" />
+              </div>
+              <div className="hidden md:block">
+                <RecentActivity title="Real-time Feed" />
+              </div>
+            </div>
+            
+            {/* Overlay Gradient to fade out bottom */}
+            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[var(--background)] to-transparent" />
           </div>
         </motion.div>
       </section>
 
       {/* Stats Bar */}
-      <section className="relative px-6 py-12">
+      <section className="relative px-6 py-20 z-10">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             {[
               { label: t('stats', 'totalProjects'), value: 214, suffix: '+' },
@@ -132,13 +192,14 @@ export default function HomePage() {
               { label: t('stats', 'compensationDisbursed'), value: 14650, suffix: ' Cr' },
               { label: t('stats', 'familiesResettled'), value: 40900, suffix: '+' },
             ].map((stat, i) => (
-              <div key={i} className="glass rounded-2xl p-6 text-center 
-                hover:bg-white/10 transition-all duration-300 group">
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-saffron to-emerald 
-                  bg-clip-text text-transparent mb-2">
+              <div key={i} className="glass-dark rounded-3xl p-8 text-center 
+                hover:border-saffron/30 transition-all duration-500 group relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-br from-saffron to-emerald 
+                  bg-clip-text text-transparent mb-3">
                   <AnimatedCounter end={stat.value} suffix={stat.suffix} />
                 </div>
-                <p className="text-xs md:text-sm text-slate-400 group-hover:text-slate-300 transition-colors">
+                <p className="text-sm md:text-base font-medium text-muted group-hover:text-heading transition-colors">
                   {stat.label}
                 </p>
               </div>
@@ -148,25 +209,25 @@ export default function HomePage() {
       </section>
 
       {/* Features Grid */}
-      <section className="relative px-6 py-16">
+      <section className="relative px-6 py-24 z-10 bg-black/3 dark:bg-white/[0.02]">
         <div className="max-w-6xl mx-auto">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-heading to-muted bg-clip-text text-transparent">
                 End-to-End Platform
               </span>
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-lg text-muted max-w-2xl mx-auto">
               From gazette notification to physical possession — every step digitized, tracked, and transparent.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feat, i) => (
               <motion.div
                 key={i}
@@ -175,18 +236,19 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
               >
-                <div className="glass rounded-2xl p-6 h-full hover:bg-white/10 
-                  transition-all duration-300 group cursor-pointer 
-                  hover:scale-[1.02] hover:shadow-xl">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feat.color} 
-                    flex items-center justify-center mb-4 shadow-lg
-                    group-hover:scale-110 transition-transform duration-300`}>
-                    <feat.icon className="w-6 h-6 text-white" />
+                <div className="glass-dark rounded-3xl p-8 h-full 
+                  transition-all duration-500 group cursor-pointer 
+                  hover:scale-[1.03] hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.3)]
+                  border border-black/5 dark:border-white/5 hover:border-white/10">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${feat.color} 
+                    flex items-center justify-center mb-6 shadow-lg
+                    group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                    <feat.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-xl font-bold text-heading mb-3">
                     {t('nav', feat.titleKey)}
                   </h3>
-                  <p className="text-sm text-slate-400 leading-relaxed">
+                  <p className="text-muted leading-relaxed">
                     {feat.desc}
                   </p>
                 </div>
@@ -197,32 +259,41 @@ export default function HomePage() {
       </section>
 
       {/* Language Support Banner */}
-      <section className="relative px-6 py-16">
+      <section className="relative px-6 py-24 z-10">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto glass rounded-3xl p-8 md:p-12 text-center"
+          className="max-w-5xl mx-auto glass-dark rounded-[3rem] p-10 md:p-16 text-center border border-emerald/20 relative overflow-hidden"
         >
-          <HiOutlineGlobeAlt className="w-12 h-12 text-saffron mx-auto mb-4" />
-          <h3 className="text-2xl md:text-3xl font-bold mb-3">
-            Available in 22 Indian Languages
+          <div className="absolute inset-0 bg-gradient-to-r from-saffron/10 via-emerald/10 to-royal/10 opacity-50" />
+          <HiOutlineGlobeAlt className="w-16 h-16 text-emerald mx-auto mb-6 relative z-10 animate-[spin_10s_linear_infinite]" />
+          <h3 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 text-heading">
+            Accessible in 22 Indian Languages
           </h3>
-          <p className="text-slate-400 mb-6 max-w-2xl mx-auto">
+          <p className="text-lg text-muted mb-8 max-w-3xl mx-auto relative z-10 leading-relaxed">
             हिन्दी • বাংলা • తెలుగు • தமிழ் • मराठी • ગુજરાતી • ಕನ್ನಡ • മലയാളം • ਪੰਜਾਬੀ • ଓଡ଼ିଆ • اردو and more...
           </p>
-          <p className="text-xs text-slate-500">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass bg-white/5 text-sm font-medium text-heading relative z-10">
             RTL support for Urdu, Sindhi & Kashmiri • WCAG 2.1 Accessible
-          </p>
+          </div>
         </motion.div>
       </section>
 
       {/* Footer */}
-      <footer className="relative px-6 py-10 border-t border-white/5">
-        <div className="max-w-6xl mx-auto text-center text-sm text-slate-500">
-          <p>BhumiSetu (भूमि-सेतु) • Ministry of Rural Development • Government of India</p>
-          <p className="mt-1 text-xs text-slate-600">
-            Smart India Hackathon 2026 • Problem Statement SIH26016
+      <footer className="relative px-6 py-12 border-t border-black/10 dark:border-white/10 z-10 bg-black/5 dark:bg-white/[0.02]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-saffron to-emerald flex items-center justify-center font-bold text-white">
+              भू
+            </div>
+            <div>
+              <p className="font-bold text-heading">BhumiSetu (भूमि-सेतु)</p>
+              <p className="text-xs text-muted">Ministry of Rural Development • Government of India</p>
+            </div>
+          </div>
+          <p className="text-xs font-medium text-muted bg-black/5 dark:bg-white/5 px-3 py-1.5 rounded-full">
+            Smart India Hackathon 2026 • SIH26016
           </p>
         </div>
       </footer>
