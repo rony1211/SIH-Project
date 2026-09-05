@@ -1,0 +1,102 @@
+{
+  "app": {
+    "title": "भूमि-सेतु — राष्ट्रीय भूमि अधिग्रहण प्रणाली",
+    "subtitle": "वास्तविक समय डिजिटल निगरानी और निर्णय सहायता",
+    "tagline": "सरकार, भूमि और जनता को जोड़ने वाला पुल"
+  },
+  "nav": {
+    "home": "मुख्य पृष्ठ",
+    "dashboard": "डैशबोर्ड",
+    "projects": "परियोजनाएँ",
+    "map": "भू-स्थानिक मानचित्र",
+    "rrTracker": "पुनर्वास ट्रैकर",
+    "documents": "दस्तावेज़",
+    "grievance": "शिकायत पोर्टल",
+    "field": "क्षेत्र सत्यापन",
+    "admin": "प्रशासन पैनल"
+  },
+  "hero": {
+    "heading": "वास्तविक समय राष्ट्रीय भूमि अधिग्रहण प्रणाली",
+    "description": "भारत भर में भूमि अधिग्रहण, मुआवजा वितरण और पुनर्वास की संपूर्ण डिजिटल निगरानी। पारदर्शिता और गति को सशक्त बनाना।",
+    "cta_dashboard": "डैशबोर्ड देखें",
+    "cta_projects": "परियोजनाएँ ट्रैक करें"
+  },
+  "stats": {
+    "totalProjects": "कुल परियोजनाएँ",
+    "landNotified": "अधिसूचित भूमि (हेक्टेयर)",
+    "landAcquired": "अधिग्रहित भूमि (हेक्टेयर)",
+    "compensationDisbursed": "वितरित मुआवजा (₹ करोड़)",
+    "familiesAffected": "प्रभावित परिवार",
+    "familiesResettled": "पुनर्स्थापित परिवार",
+    "nationalProgress": "राष्ट्रीय प्रगति"
+  },
+  "dashboard": {
+    "title": "राष्ट्रीय कमांड डैशबोर्ड",
+    "subtitle": "भारत भर में भूमि अधिग्रहण का वास्तविक समय अवलोकन",
+    "filters": "फ़िल्टर",
+    "stateWise": "राज्यवार अवलोकन",
+    "timeline": "समयसीमा अनुपालन",
+    "recentActivity": "हाल की गतिविधि",
+    "notifiedVsAcquired": "अधिसूचित बनाम अधिग्रहित",
+    "compensationFlow": "मुआवजा प्रवाह"
+  },
+  "projects": {
+    "title": "परियोजना ट्रैकर",
+    "search": "परियोजनाएँ खोजें...",
+    "filterByState": "राज्य द्वारा फ़िल्टर करें",
+    "filterByStatus": "स्थिति द्वारा फ़िल्टर करें",
+    "totalArea": "कुल क्षेत्रफल",
+    "acquiredArea": "अधिग्रहित क्षेत्रफल",
+    "budget": "बजट",
+    "spent": "व्यय",
+    "timeline": "समयसीमा",
+    "status": "स्थिति",
+    "viewDetails": "विवरण देखें"
+  },
+  "rr": {
+    "title": "पुनर्वास एवं पुनर्स्थापन ट्रैकर",
+    "subtitle": "प्रभावित परिवारों के लिए पात्रता और पुनर्स्थापन प्रगति ट्रैक करें",
+    "housing": "आवास",
+    "employment": "रोज़गार",
+    "annuity": "वार्षिकी",
+    "transport": "परिवहन भत्ता",
+    "familyId": "परिवार आईडी",
+    "headOfFamily": "परिवार का मुखिया",
+    "village": "गाँव",
+    "overallProgress": "समग्र प्रगति"
+  },
+  "grievance": {
+    "title": "नागरिक शिकायत पोर्टल",
+    "subtitle": "भूमि अधिग्रहण से संबंधित शिकायतें दर्ज करें और ट्रैक करें",
+    "fileComplaint": "शिकायत दर्ज करें",
+    "trackComplaint": "शिकायत ट्रैक करें",
+    "ticketId": "टिकट आईडी",
+    "name": "आपका नाम",
+    "phone": "फ़ोन नंबर",
+    "description": "अपनी समस्या का वर्णन करें",
+    "submit": "शिकायत जमा करें",
+    "noLoginRequired": "लॉगिन आवश्यक नहीं"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "noData": "कोई डेटा उपलब्ध नहीं",
+    "viewAll": "सभी देखें",
+    "export": "निर्यात",
+    "filter": "फ़िल्टर",
+    "search": "खोजें",
+    "hectares": "हेक्टेयर",
+    "crores": "करोड़",
+    "language": "भाषा",
+    "darkMode": "डार्क मोड",
+    "lightMode": "लाइट मोड"
+  },
+  "statuses": {
+    "gazetteNotification": "राजपत्र अधिसूचना",
+    "survey": "सर्वेक्षण",
+    "jointMeasurement": "संयुक्त माप",
+    "awardDisbursement": "पुरस्कार एवं वितरण",
+    "compensationDisbursement": "मुआवजा वितरण",
+    "possessionTaken": "कब्ज़ा लिया गया",
+    "completed": "पूर्ण"
+  }
+}

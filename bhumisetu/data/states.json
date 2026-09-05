@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ST-01",
+    "name": "Maharashtra",
+    "totalProjects": 45,
+    "landNotifiedHa": 12500,
+    "landAcquiredHa": 9800,
+    "compensationAssessedCr": 4500,
+    "compensationDisbursedCr": 3950,
+    "familiesAffected": 12500,
+    "familiesResettled": 11200,
+    "overallProgress": 78
+  },
+  {
+    "id": "ST-02",
+    "name": "Gujarat",
+    "totalProjects": 32,
+    "landNotifiedHa": 8500,
+    "landAcquiredHa": 7200,
+    "compensationAssessedCr": 2800,
+    "compensationDisbursedCr": 2600,
+    "familiesAffected": 8200,
+    "familiesResettled": 7800,
+    "overallProgress": 85
+  },
+  {
+    "id": "ST-03",
+    "name": "Uttar Pradesh",
+    "totalProjects": 68,
+    "landNotifiedHa": 21000,
+    "landAcquiredHa": 15400,
+    "compensationAssessedCr": 7200,
+    "compensationDisbursedCr": 5100,
+    "familiesAffected": 25000,
+    "familiesResettled": 16000,
+    "overallProgress": 62
+  },
+  {
+    "id": "ST-04",
+    "name": "Tamil Nadu",
+    "totalProjects": 28,
+    "landNotifiedHa": 6200,
+    "landAcquiredHa": 5100,
+    "compensationAssessedCr": 3100,
+    "compensationDisbursedCr": 2900,
+    "familiesAffected": 6500,
+    "familiesResettled": 5900,
+    "overallProgress": 82
+  },
+  {
+    "id": "ST-05",
+    "name": "Karnataka",
+    "totalProjects": 41,
+    "landNotifiedHa": 9400,
+    "landAcquiredHa": 6800,
+    "compensationAssessedCr": 3800,
+    "compensationDisbursedCr": 2100,
+    "familiesAffected": 9800,
+    "familiesResettled": 6200,
+    "overallProgress": 55
+  }
+]

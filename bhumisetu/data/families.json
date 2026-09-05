@@ -1,0 +1,44 @@
+[
+  {
+    "id": "FAM-9982",
+    "headOfFamily": "Ramesh Kumar",
+    "projectId": "PRJ-NHAI-001",
+    "village": "Vangaon",
+    "category": "Displaced",
+    "entitlements": {
+      "housing": { "status": "Allotted", "details": "Plot No 45, R&R Colony" },
+      "employment": { "status": "Pending", "details": "Awaiting skill training" },
+      "annuity": { "status": "Active", "details": "₹3000/month for 20 years" },
+      "transportationAllowance": { "status": "Paid", "details": "₹50,000 disbursed" }
+    },
+    "overallProgress": 75
+  },
+  {
+    "id": "FAM-9983",
+    "headOfFamily": "Sita Devi",
+    "projectId": "PRJ-NHAI-001",
+    "village": "Vangaon",
+    "category": "Affected (Livelihood Loss)",
+    "entitlements": {
+      "housing": { "status": "Not Applicable", "details": "" },
+      "employment": { "status": "Provided", "details": "Job at Toll Plaza" },
+      "annuity": { "status": "Pending Approval", "details": "Verification pending" },
+      "oneTimeGrant": { "status": "Paid", "details": "₹5,00,000 disbursed" }
+    },
+    "overallProgress": 80
+  },
+  {
+    "id": "FAM-10245",
+    "headOfFamily": "Mohammed Tariq",
+    "projectId": "PRJ-IRR-042",
+    "village": "Banda Khurd",
+    "category": "Displaced",
+    "entitlements": {
+      "housing": { "status": "Pending", "details": "Colony under construction" },
+      "employment": { "status": "Not Applicable", "details": "Opted for one-time grant" },
+      "annuity": { "status": "Pending", "details": "Documentation incomplete" },
+      "transportationAllowance": { "status": "Pending", "details": "" }
+    },
+    "overallProgress": 10
+  }
+]

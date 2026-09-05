@@ -1,0 +1,102 @@
+{
+  "app": {
+    "title": "BhumiSetu — National Land Acquisition System",
+    "subtitle": "Real-Time Digital Monitoring & Decision Support",
+    "tagline": "Bridging Government, Land, and People"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "map": "Geospatial Map",
+    "rrTracker": "R&R Tracker",
+    "documents": "Documents",
+    "grievance": "Grievance Portal",
+    "field": "Field Verification",
+    "admin": "Admin Panel"
+  },
+  "hero": {
+    "heading": "Real-Time National Land Acquisition System",
+    "description": "End-to-end digital monitoring of land acquisition, compensation disbursement, and rehabilitation across India. Empowering transparency and speed.",
+    "cta_dashboard": "View Dashboard",
+    "cta_projects": "Track Projects"
+  },
+  "stats": {
+    "totalProjects": "Total Projects",
+    "landNotified": "Land Notified (Ha)",
+    "landAcquired": "Land Acquired (Ha)",
+    "compensationDisbursed": "Compensation Disbursed (₹ Cr)",
+    "familiesAffected": "Families Affected",
+    "familiesResettled": "Families Resettled",
+    "nationalProgress": "National Progress"
+  },
+  "dashboard": {
+    "title": "National Command Dashboard",
+    "subtitle": "Real-time overview of land acquisition across India",
+    "filters": "Filters",
+    "stateWise": "State-Wise Overview",
+    "timeline": "Timeline Adherence",
+    "recentActivity": "Recent Activity",
+    "notifiedVsAcquired": "Notified vs Acquired",
+    "compensationFlow": "Compensation Flow"
+  },
+  "projects": {
+    "title": "Project Tracker",
+    "search": "Search projects...",
+    "filterByState": "Filter by State",
+    "filterByStatus": "Filter by Status",
+    "totalArea": "Total Area",
+    "acquiredArea": "Acquired Area",
+    "budget": "Budget",
+    "spent": "Spent",
+    "timeline": "Timeline",
+    "status": "Status",
+    "viewDetails": "View Details"
+  },
+  "rr": {
+    "title": "Rehabilitation & Resettlement Tracker",
+    "subtitle": "Track entitlements and resettlement progress for affected families",
+    "housing": "Housing",
+    "employment": "Employment",
+    "annuity": "Annuity",
+    "transport": "Transportation Allowance",
+    "familyId": "Family ID",
+    "headOfFamily": "Head of Family",
+    "village": "Village",
+    "overallProgress": "Overall Progress"
+  },
+  "grievance": {
+    "title": "Citizen Grievance Portal",
+    "subtitle": "File and track complaints related to land acquisition",
+    "fileComplaint": "File a Complaint",
+    "trackComplaint": "Track Complaint",
+    "ticketId": "Ticket ID",
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "description": "Describe your issue",
+    "submit": "Submit Complaint",
+    "noLoginRequired": "No login required"
+  },
+  "common": {
+    "loading": "Loading...",
+    "noData": "No data available",
+    "viewAll": "View All",
+    "export": "Export",
+    "filter": "Filter",
+    "search": "Search",
+    "hectares": "Ha",
+    "crores": "Cr",
+    "language": "Language",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+  "statuses": {
+    "gazetteNotification": "Gazette Notification",
+    "survey": "Survey",
+    "jointMeasurement": "Joint Measurement",
+    "awardDisbursement": "Award & Disbursement",
+    "compensationDisbursement": "Compensation Disbursement",
+    "possessionTaken": "Possession Taken",
+    "completed": "Completed"
+  }
+}
