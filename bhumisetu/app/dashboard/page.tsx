@@ -32,7 +32,7 @@ export default function DashboardPage() {
         <StatsCard
           icon={<HiOutlineFolder className="w-5 h-5 text-white" />}
           label={t('stats', 'totalProjects')}
-          value={214}
+          initialValue={214}
           trend={{ value: 12, isUp: true }}
           color="from-saffron to-orange-500"
           delay={0}
@@ -40,7 +40,8 @@ export default function DashboardPage() {
         <StatsCard
           icon={<HiOutlineMapPin className="w-5 h-5 text-white" />}
           label={t('stats', 'landAcquired')}
-          value="39,300 Ha"
+          initialValue={39300}
+          suffix=" Ha"
           trend={{ value: 8, isUp: true }}
           color="from-emerald to-teal-500"
           delay={0.1}
@@ -48,7 +49,9 @@ export default function DashboardPage() {
         <StatsCard
           icon={<HiOutlineBanknotes className="w-5 h-5 text-white" />}
           label={t('stats', 'compensationDisbursed')}
-          value="₹14,650 Cr"
+          initialValue={14650}
+          prefix="₹"
+          suffix=" Cr"
           trend={{ value: 5, isUp: true }}
           color="from-royal to-indigo-500"
           delay={0.2}
@@ -56,7 +59,7 @@ export default function DashboardPage() {
         <StatsCard
           icon={<HiOutlineUserGroup className="w-5 h-5 text-white" />}
           label={t('stats', 'familiesResettled')}
-          value="40,900"
+          initialValue={40900}
           trend={{ value: 3, isUp: false }}
           color="from-purple-500 to-pink-500"
           delay={0.3}

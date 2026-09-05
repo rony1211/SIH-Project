@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 interface StateRowProps {
   name: string;
@@ -12,10 +13,26 @@ interface StateRowProps {
 }
 
 function StateRow({ name, projects, notified, acquired, progress, delay }: StateRowProps) {
+  const [currentProgress, setCurrentProgress] = useState(progress);
+  const [currentAcquired, setCurrentAcquired] = useState(acquired);
+
+  useEffect(() => {
+    // Random chance to increase progress slightly every 5 seconds
+    const interval = setInterval(() => {
+      if (Math.random() > 0.7 && currentProgress < 100) {
+        const increase = Math.floor(Math.random() * 2) + 1;
+        const newProgress = Math.min(100, currentProgress + increase);
+        setCurrentProgress(newProgress);
+        setCurrentAcquired(Math.floor((notified * newProgress) / 100));
+      }
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentProgress, notified]);
+
   const progressColor =
-    progress >= 80 ? 'bg-emerald' :
-    progress >= 60 ? 'bg-saffron' :
-    progress >= 40 ? 'bg-warning' : 'bg-danger';
+    currentProgress >= 80 ? 'bg-emerald' :
+    currentProgress >= 60 ? 'bg-saffron' :
+    currentProgress >= 40 ? 'bg-warning' : 'bg-danger';
 
   return (
     <motion.tr
@@ -27,25 +44,29 @@ function StateRow({ name, projects, notified, acquired, progress, delay }: State
       <td className="py-3 px-4 text-sm text-heading font-medium">{name}</td>
       <td className="py-3 px-4 text-sm text-body text-center">{projects}</td>
       <td className="py-3 px-4 text-sm text-body text-right">{notified.toLocaleString('en-IN')}</td>
-      <td className="py-3 px-4 text-sm text-body text-right">{acquired.toLocaleString('en-IN')}</td>
+      <td className="py-3 px-4 text-sm text-body text-right tabular-nums transition-all duration-500">
+        {currentAcquired.toLocaleString('en-IN')}
+      </td>
       <td className="py-3 px-4">
         <div className="flex items-center gap-2">
           <div className="flex-1 h-2 bg-black/10 dark:bg-white/10 rounded-full overflow-hidden">
             <motion.div
               initial={{ width: 0 }}
-              animate={{ width: `${progress}%` }}
+              animate={{ width: `${currentProgress}%` }}
               transition={{ duration: 1, delay: delay + 0.3 }}
-              className={`h-full rounded-full ${progressColor}`}
+              className={`h-full rounded-full ${progressColor} transition-all duration-1000`}
             />
           </div>
-          <span className="text-xs text-muted w-9 text-right">{progress}%</span>
+          <span className="text-xs text-muted w-9 text-right tabular-nums transition-all duration-500">
+            {currentProgress}%
+          </span>
         </div>
       </td>
     </motion.tr>
   );
 }
 
-const states = [
+const initialStates = [
   { name: 'Gujarat', projects: 32, notified: 8500, acquired: 7200, progress: 85 },
   { name: 'Tamil Nadu', projects: 28, notified: 6200, acquired: 5100, progress: 82 },
   { name: 'Maharashtra', projects: 45, notified: 12500, acquired: 9800, progress: 78 },
@@ -62,9 +83,17 @@ export default function StateTable({ title }: { title: string }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="glass rounded-2xl p-6 overflow-hidden"
+      className="glass rounded-2xl p-6 overflow-hidden relative"
     >
-      <h3 className="text-lg font-semibold text-heading mb-4">{title}</h3>
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-lg font-semibold text-heading flex items-center gap-2">
+          {title}
+          <span className="flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-saffron/80 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-saffron"></span>
+          </span>
+        </h3>
+      </div>
       <div className="overflow-x-auto">
         <table className="w-full">
           <thead>
@@ -77,7 +106,7 @@ export default function StateTable({ title }: { title: string }) {
             </tr>
           </thead>
           <tbody>
-            {states.map((s, i) => (
+            {initialStates.map((s, i) => (
               <StateRow key={s.name} {...s} delay={0.3 + i * 0.06} />
             ))}
           </tbody>
