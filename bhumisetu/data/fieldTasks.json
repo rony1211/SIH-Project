@@ -1,0 +1,72 @@
+[
+  {
+    "id": "FT-2026-001",
+    "officerId": "OFC-001",
+    "type": "Joint Measurement",
+    "landowner": "Ramesh Patel",
+    "village": "Sanand, Gujarat",
+    "project": "Ahmedabad-Dholera Expressway",
+    "priority": "High",
+    "status": "Pending",
+    "distance": "1.2 km",
+    "dueDate": "2026-09-07",
+    "coordinates": { "lat": 22.9837, "lng": 72.3789 },
+    "documentsRequired": ["ID Proof", "Land Registry", "Consent Form"]
+  },
+  {
+    "id": "FT-2026-002",
+    "officerId": "OFC-001",
+    "type": "Aadhaar Verification",
+    "landowner": "Anita Devi",
+    "village": "Palwal, Haryana",
+    "project": "Delhi-Mumbai Expressway",
+    "priority": "Medium",
+    "status": "Pending",
+    "distance": "3.5 km",
+    "dueDate": "2026-09-08",
+    "coordinates": { "lat": 28.1487, "lng": 77.3320 },
+    "documentsRequired": ["Aadhaar Card", "Bank Passbook"]
+  },
+  {
+    "id": "FT-2026-003",
+    "officerId": "OFC-001",
+    "type": "Consent Collection",
+    "landowner": "Suresh Kumar",
+    "village": "Kalyan, Maharashtra",
+    "project": "Mumbai-Ahmedabad HSR",
+    "priority": "Urgent",
+    "status": "In Progress",
+    "distance": "0.8 km",
+    "dueDate": "2026-09-06",
+    "coordinates": { "lat": 19.2403, "lng": 73.1305 },
+    "documentsRequired": ["Consent Form (Signed)"]
+  },
+  {
+    "id": "FT-2026-004",
+    "officerId": "OFC-001",
+    "type": "Dispute Resolution",
+    "landowner": "Gurpreet Singh",
+    "village": "Rajpura, Punjab",
+    "project": "Ludhiana-Rupnagar Highway",
+    "priority": "Medium",
+    "status": "Completed",
+    "distance": "12.4 km",
+    "dueDate": "2026-09-05",
+    "coordinates": { "lat": 30.4852, "lng": 76.5930 },
+    "documentsRequired": ["Dispute Settlement Agreement"]
+  },
+  {
+    "id": "FT-2026-005",
+    "officerId": "OFC-001",
+    "type": "R&R Site Inspection",
+    "landowner": "Community Block A",
+    "village": "Noida Sector 150",
+    "project": "Jewar Airport Expansion",
+    "priority": "High",
+    "status": "Pending",
+    "distance": "5.1 km",
+    "dueDate": "2026-09-09",
+    "coordinates": { "lat": 28.3750, "lng": 77.5255 },
+    "documentsRequired": ["Inspection Report", "Geotagged Photos"]
+  }
+]
