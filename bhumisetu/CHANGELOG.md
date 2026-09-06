@@ -8,6 +8,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 *AI Agents: Please document your work here before making your final commits.*
 
 ### Added
+- **Phase 10: Gamified Officer Performance Dashboard (`app/officers/page.tsx`)**:
+  - Rich mock dataset with 20 officers across 8 states/districts, XP, levels (Bronze→Diamond), badges, streaks, and monthly trends (`data/officers.json`).
+  - Backend API route (`app/api/officers/route.ts`) with state/level/search filtering, sorting, and aggregate stats.
+  - KPI Stats Header (`components/officers/OfficerStatsHeader.tsx`) with 5 animated cards: Total Officers, Avg SLA, Cases This Month, Top Performer, Active Streaks.
+  - Premium Leaderboard Table (`components/officers/LeaderboardTable.tsx`) with podium-style top-3 highlighting, gradient avatar, XP progress bars, SLA ring gauges, mini sparkline trends, streak flames, and rank change animations.
+  - Achievement Badge Showcase (`components/officers/BadgeShowcase.tsx`) with 12 unique badges as glassmorphic cards with glow effects; earned = vivid, locked = greyed with lock overlay and hover tooltip.
+  - Performance Trends (`components/officers/PerformanceTrends.tsx`) with Recharts composed chart (area + line), level distribution, and top badge collector leaderboard.
+  - Officer Profile Card (`components/officers/OfficerProfileCard.tsx`) expandable modal with SVG radar chart (5 axes), XP progress to next level, key metrics, and full badge showcase.
+  - District Heatmap (`components/officers/DistrictHeatmap.tsx`) with performance-colored grid, best/worst district summary, and click-to-filter leaderboard.
+  - Tab-based page navigation: Leaderboard | Badges & Achievements | Performance Trends | District Heatmap.
+  - Sidebar navigation link with HiOutlineTrophy icon.
+  - 5-language localization support (`en`, `hi`, `bn`, `ta`, `te`).
 - **Phase 9: Rehabilitation & Resettlement (R&R) Family Entitlement & Resettlement Tracker (`app/rr-tracker/page.tsx`)**:
   - Enriched family dataset with 15+ comprehensive displaced and affected families spanning national highway, railway, irrigation, solar, port, and airport projects (`data/families.json`).
   - Shared in-memory R&R store (`lib/rrStore.ts`) with dynamic entitlement fulfillment and DBT progress recalculation.

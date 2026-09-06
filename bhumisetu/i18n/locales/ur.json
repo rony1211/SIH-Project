@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "بھومی سیٹو - نیشنل لینڈ ایکوزیشن سسٹم",
+    "subtitle": "ریئل ٹائم ڈیجیٹل مانیٹرنگ اور فیصلہ سپورٹ",
+    "tagline": "حکومت، زمین، اور لوگوں کو ملانا"
+  },
+  "nav": {
+    "home": "گھر",
+    "dashboard": "ڈیش بورڈ",
+    "projects": "پروجیکٹس",
+    "map": "جغرافیائی نقشہ",
+    "rrTracker": "آر اینڈ آر ٹریکر",
+    "documents": "دستاویزات",
+    "grievance": "شکایت پورٹل",
+    "officers": "افسر کی کارکردگی",
+    "field": "فیلڈ کی تصدیق",
+    "admin": "ایڈمن پینل"
+  },
+  "hero": {
+    "heading": "ریئل ٹائم نیشنل لینڈ ایکوزیشن سسٹم",
+    "description": "زمین کے حصول، معاوضے کی تقسیم، اور ہندوستان بھر میں بازآبادکاری کی آخر سے آخر تک ڈیجیٹل نگرانی۔ شفافیت اور رفتار کو بااختیار بنانا۔",
+    "cta_dashboard": "ڈیش بورڈ دیکھیں",
+    "cta_projects": "ٹریک پروجیکٹس"
+  },
+  "stats": {
+    "totalProjects": "کل پروجیکٹس",
+    "landNotified": "زمین مطلع شدہ (ہا)",
+    "landAcquired": "حاصل شدہ زمین (ہا)",
+    "compensationDisbursed": "معاوضہ ادا کیا گیا (₹ کروڑ)",
+    "familiesAffected": "متاثرہ خاندان",
+    "familiesResettled": "خاندان دوبارہ آباد ہوئے۔",
+    "nationalProgress": "قومی ترقی"
+  },
+  "dashboard": {
+    "title": "نیشنل کمانڈ ڈیش بورڈ",
+    "subtitle": "ہندوستان بھر میں زمین کے حصول کا حقیقی وقت کا جائزہ",
+    "filters": "فلٹرز",
+    "stateWise": "ریاست کے لحاظ سے جائزہ",
+    "timeline": "ٹائم لائن کی پابندی",
+    "recentActivity": "حالیہ سرگرمی",
+    "notifiedVsAcquired": "مطلع شدہ بمقابلہ حاصل شدہ",
+    "compensationFlow": "معاوضے کا بہاؤ"
+  },
+  "projects": {
+    "title": "پروجیکٹ لائف سائیکل ٹریکر",
+    "subtitle": "قومی بنیادی ڈھانچے کے منصوبوں میں RFCTLARR ایکٹ 2013 کے قانونی سنگ میلوں کو ٹریک کریں",
+    "search": "پروجیکٹس تلاش کریں...",
+    "filterByState": "تمام ریاستیں۔",
+    "filterByStatus": "تمام سٹیٹس",
+    "filterByAgency": "تمام ایجنسیاں",
+    "criticalOnly": "صرف تنقیدی",
+    "totalArea": "کل رقبہ",
+    "acquiredArea": "حاصل شدہ علاقہ",
+    "landAcquired": "حاصل شدہ زمین",
+    "budgetAllocated": "بجٹ مختص",
+    "budgetUtilized": "استعمال شدہ بجٹ",
+    "budget": "بجٹ",
+    "spent": "خرچ کیا۔",
+    "disbursed": "ادا کیا گیا۔",
+    "timeline": "ٹائم لائن",
+    "status": "حیثیت",
+    "viewDetails": "قانونی تفصیلات دیکھیں",
+    "backToProjects": "پروجیکٹس پر واپس جائیں۔",
+    "statutoryTimeline": "RFCTLARR ایکٹ 2013 - قانونی ٹائم لائن",
+    "milestones": "سنگ میل",
+    "families": "خاندانوں",
+    "resettled": "دوبارہ آباد",
+    "activeProjects": "ایکٹو پروجیکٹس",
+    "criticalBottlenecks": "اہم رکاوٹیں",
+    "gridView": "گرڈ",
+    "kanbanView": "کنبن",
+    "tableView": "میز",
+    "noProjects": "کوئی پروجیکٹ آپ کے معیار سے مماثل نہیں ملا۔"
+  },
+  "rr": {
+    "title": "بحالی اور آبادکاری کا ٹریکر",
+    "subtitle": "متاثرہ خاندانوں کے لیے استحقاق اور دوبارہ آبادکاری کی پیشرفت کو ٹریک کریں۔",
+    "housing": "ہاؤسنگ",
+    "employment": "روزگار",
+    "annuity": "سالانہ",
+    "transport": "ٹرانسپورٹیشن الاؤنس",
+    "familyId": "فیملی آئی ڈی",
+    "headOfFamily": "خاندان کے سربراہ",
+    "village": "گاؤں",
+    "overallProgress": "مجموعی پیشرفت"
+  },
+  "grievance": {
+    "title": "سٹیزن گریوینس پورٹل",
+    "subtitle": "زمین کے حصول سے متعلق شکایات درج کریں اور ٹریک کریں۔",
+    "fileComplaint": "شکایت درج کروائیں۔",
+    "trackComplaint": "شکایت کو ٹریک کریں۔",
+    "ticketId": "ٹکٹ کی شناخت",
+    "name": "آپ کا نام",
+    "phone": "فون نمبر",
+    "description": "اپنا مسئلہ بیان کریں۔",
+    "submit": "شکایت جمع کروائیں۔",
+    "noLoginRequired": "لاگ ان کی ضرورت نہیں ہے۔"
+  },
+  "common": {
+    "loading": "لوڈ ہو رہا ہے...",
+    "noData": "کوئی ڈیٹا دستیاب نہیں ہے۔",
+    "viewAll": "سبھی دیکھیں",
+    "export": "برآمد کریں۔",
+    "filter": "فلٹر",
+    "search": "تلاش کریں۔",
+    "hectares": "ہا",
+    "crores": "کروڑ",
+    "language": "زبان",
+    "darkMode": "ڈارک موڈ",
+    "lightMode": "لائٹ موڈ"
+  },
+  "statuses": {
+    "gazetteNotification": "گزٹ نوٹیفکیشن",
+    "survey": "سروے",
+    "jointMeasurement": "مشترکہ پیمائش",
+    "awardDisbursement": "ایوارڈ اور تقسیم",
+    "compensationDisbursement": "معاوضے کی تقسیم",
+    "possessionTaken": "قبضہ کرلیا",
+    "completed": "مکمل"
+  },
+  "documents": {
+    "title": "محفوظ دستاویز ذخیرہ",
+    "subtitle": "چین آف کسٹڈی ٹریکنگ کے ساتھ سنٹرلائزڈ، ٹمپر پروف اسٹوریج",
+    "totalDocuments": "کل دستاویزات",
+    "verified": "ہیش تصدیق شدہ",
+    "pendingReview": "زیر التواء جائزہ",
+    "recentUploads": "حالیہ اپ لوڈز",
+    "searchDocuments": "دستاویزات تلاش کریں...",
+    "uploadDocument": "دستاویز اپ لوڈ کریں۔"
+  },
+  "officers": {
+    "title": "آفیسر پرفارمنس ڈیش بورڈ",
+    "subtitle": "لیڈر بورڈز، بیجز، اور کارکردگی سے باخبر رہنے کے ذریعے عمدگی کی ترغیب دینا",
+    "leaderboard": "لیڈر بورڈ",
+    "badges": "بیجز اور کامیابیاں",
+    "trends": "کارکردگی کے رجحانات",
+    "heatmap": "ڈسٹرکٹ ہیٹ میپ",
+    "allBadges": "تمام اچیومنٹ بیجز",
+    "badgesSubtitle": "حاصل کرنے کے لیے 12 منفرد بیجز - رفتار، درستگی، اور شہریوں کا اطمینان",
+    "districtHeatmap": "ضلعی کارکردگی کا ہیٹ میپ",
+    "heatmapSubtitle": "ایک نظر میں ضلعی سطح کی کارکردگی کا موازنہ — لیڈر بورڈ کو فلٹر کرنے کے لیے کسی بھی ضلع پر کلک کریں۔"
+  }
+}

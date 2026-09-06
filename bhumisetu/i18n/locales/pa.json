@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "ਭੂਮੀਸੇਤੂ - ਰਾਸ਼ਟਰੀ ਭੂਮੀ ਗ੍ਰਹਿਣ ਪ੍ਰਣਾਲੀ",
+    "subtitle": "ਰੀਅਲ-ਟਾਈਮ ਡਿਜੀਟਲ ਨਿਗਰਾਨੀ ਅਤੇ ਫੈਸਲਾ ਸਮਰਥਨ",
+    "tagline": "ਬ੍ਰਿਜਿੰਗ ਸਰਕਾਰ, ਜ਼ਮੀਨ, ਅਤੇ ਲੋਕ"
+  },
+  "nav": {
+    "home": "ਘਰ",
+    "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+    "projects": "ਪ੍ਰੋਜੈਕਟਸ",
+    "map": "ਭੂ-ਸਥਾਨਕ ਨਕਸ਼ਾ",
+    "rrTracker": "R&R ਟਰੈਕਰ",
+    "documents": "ਦਸਤਾਵੇਜ਼",
+    "grievance": "ਸ਼ਿਕਾਇਤ ਪੋਰਟਲ",
+    "officers": "ਅਫਸਰ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ",
+    "field": "ਫੀਲਡ ਵੈਰੀਫਿਕੇਸ਼ਨ",
+    "admin": "ਐਡਮਿਨ ਪੈਨਲ"
+  },
+  "hero": {
+    "heading": "ਰੀਅਲ-ਟਾਈਮ ਰਾਸ਼ਟਰੀ ਭੂਮੀ ਗ੍ਰਹਿਣ ਪ੍ਰਣਾਲੀ",
+    "description": "ਭਾਰਤ ਭਰ ਵਿੱਚ ਭੂਮੀ ਗ੍ਰਹਿਣ, ਮੁਆਵਜ਼ੇ ਦੀ ਵੰਡ, ਅਤੇ ਮੁੜ ਵਸੇਬੇ ਦੀ ਅੰਤ-ਤੋਂ-ਅੰਤ ਡਿਜੀਟਲ ਨਿਗਰਾਨੀ। ਪਾਰਦਰਸ਼ਤਾ ਅਤੇ ਗਤੀ ਨੂੰ ਸ਼ਕਤੀ ਪ੍ਰਦਾਨ ਕਰਨਾ।",
+    "cta_dashboard": "ਡੈਸ਼ਬੋਰਡ ਦੇਖੋ",
+    "cta_projects": "ਪ੍ਰੋਜੈਕਟਾਂ ਨੂੰ ਟਰੈਕ ਕਰੋ"
+  },
+  "stats": {
+    "totalProjects": "ਕੁੱਲ ਪ੍ਰੋਜੈਕਟ",
+    "landNotified": "ਲੈਂਡ ਨੋਟੀਫਾਈਡ (ਹੈ)",
+    "landAcquired": "ਐਕੁਆਇਰ ਕੀਤੀ ਜ਼ਮੀਨ (ਹੈ)",
+    "compensationDisbursed": "ਮੁਆਵਜ਼ਾ ਵੰਡਿਆ ਗਿਆ (₹ ਕਰੋੜ)",
+    "familiesAffected": "ਪ੍ਰਭਾਵਿਤ ਪਰਿਵਾਰ",
+    "familiesResettled": "ਪਰਿਵਾਰ ਮੁੜ ਵਸਾਏ ਗਏ",
+    "nationalProgress": "ਰਾਸ਼ਟਰੀ ਤਰੱਕੀ"
+  },
+  "dashboard": {
+    "title": "ਨੈਸ਼ਨਲ ਕਮਾਂਡ ਡੈਸ਼ਬੋਰਡ",
+    "subtitle": "ਪੂਰੇ ਭਾਰਤ ਵਿੱਚ ਭੂਮੀ ਗ੍ਰਹਿਣ ਦੀ ਅਸਲ-ਸਮੇਂ ਦੀ ਸੰਖੇਪ ਜਾਣਕਾਰੀ",
+    "filters": "ਫਿਲਟਰ",
+    "stateWise": "ਰਾਜ-ਵਾਰ ਸੰਖੇਪ ਜਾਣਕਾਰੀ",
+    "timeline": "ਸਮਾਂਰੇਖਾ ਦੀ ਪਾਲਣਾ",
+    "recentActivity": "ਹਾਲੀਆ ਗਤੀਵਿਧੀ",
+    "notifiedVsAcquired": "ਨੋਟੀਫਾਈਡ ਬਨਾਮ ਐਕੁਆਇਰ ਕੀਤਾ ਗਿਆ",
+    "compensationFlow": "ਮੁਆਵਜ਼ਾ ਪ੍ਰਵਾਹ"
+  },
+  "projects": {
+    "title": "ਪ੍ਰੋਜੈਕਟ ਲਾਈਫਸਾਈਕਲ ਟਰੈਕਰ",
+    "subtitle": "ਰਾਸ਼ਟਰੀ ਬੁਨਿਆਦੀ ਢਾਂਚਾ ਪ੍ਰੋਜੈਕਟਾਂ ਵਿੱਚ RFCTLARR ਐਕਟ 2013 ਦੇ ਕਾਨੂੰਨੀ ਮੀਲ ਪੱਥਰਾਂ ਨੂੰ ਟਰੈਕ ਕਰੋ",
+    "search": "ਪ੍ਰੋਜੈਕਟ ਖੋਜੋ...",
+    "filterByState": "ਸਾਰੇ ਰਾਜ",
+    "filterByStatus": "ਸਾਰੀਆਂ ਸਥਿਤੀਆਂ",
+    "filterByAgency": "ਸਾਰੀਆਂ ਏਜੰਸੀਆਂ",
+    "criticalOnly": "ਸਿਰਫ਼ ਨਾਜ਼ੁਕ",
+    "totalArea": "ਕੁੱਲ ਖੇਤਰ",
+    "acquiredArea": "ਐਕੁਆਇਰ ਕੀਤਾ ਖੇਤਰ",
+    "landAcquired": "ਜ਼ਮੀਨ ਐਕੁਆਇਰ ਕੀਤੀ",
+    "budgetAllocated": "ਬਜਟ ਅਲਾਟ ਕੀਤਾ ਗਿਆ",
+    "budgetUtilized": "ਬਜਟ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਗਈ",
+    "budget": "ਬਜਟ",
+    "spent": "ਖਰਚ ਕੀਤਾ",
+    "disbursed": "ਵੰਡਿਆ ਗਿਆ",
+    "timeline": "ਸਮਾਂਰੇਖਾ",
+    "status": "ਸਥਿਤੀ",
+    "viewDetails": "ਵਿਧਾਨਕ ਵੇਰਵੇ ਵੇਖੋ",
+    "backToProjects": "ਪ੍ਰੋਜੈਕਟਾਂ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+    "statutoryTimeline": "RFCTLARR ਐਕਟ 2013 — ਕਨੂੰਨੀ ਸਮਾਂ-ਰੇਖਾ",
+    "milestones": "ਮੀਲ ਪੱਥਰ",
+    "families": "ਪਰਿਵਾਰ",
+    "resettled": "ਮੁੜ ਵਸਾਇਆ",
+    "activeProjects": "ਕਿਰਿਆਸ਼ੀਲ ਪ੍ਰੋਜੈਕਟ",
+    "criticalBottlenecks": "ਨਾਜ਼ੁਕ ਰੁਕਾਵਟਾਂ",
+    "gridView": "ਗਰਿੱਡ",
+    "kanbanView": "ਕੰਬਨ",
+    "tableView": "ਟੇਬਲ",
+    "noProjects": "ਤੁਹਾਡੇ ਮਾਪਦੰਡ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਕੋਈ ਪ੍ਰੋਜੈਕਟ ਨਹੀਂ ਮਿਲਿਆ।"
+  },
+  "rr": {
+    "title": "ਪੁਨਰਵਾਸ ਅਤੇ ਪੁਨਰਵਾਸ ਟਰੈਕਰ",
+    "subtitle": "ਪ੍ਰਭਾਵਿਤ ਪਰਿਵਾਰਾਂ ਲਈ ਹੱਕਾਂ ਅਤੇ ਮੁੜ ਵਸੇਬੇ ਦੀ ਪ੍ਰਗਤੀ ਨੂੰ ਟਰੈਕ ਕਰੋ",
+    "housing": "ਰਿਹਾਇਸ਼",
+    "employment": "ਰੁਜ਼ਗਾਰ",
+    "annuity": "ਸਾਲਾਨਾ",
+    "transport": "ਆਵਾਜਾਈ ਭੱਤਾ",
+    "familyId": "ਪਰਿਵਾਰਕ ਆਈ.ਡੀ",
+    "headOfFamily": "ਪਰਿਵਾਰ ਦਾ ਮੁਖੀ",
+    "village": "ਪਿੰਡ",
+    "overallProgress": "ਸਮੁੱਚੀ ਤਰੱਕੀ"
+  },
+  "grievance": {
+    "title": "ਸਿਟੀਜ਼ਨ ਸ਼ਿਕਾਇਤ ਪੋਰਟਲ",
+    "subtitle": "ਜ਼ਮੀਨ ਗ੍ਰਹਿਣ ਨਾਲ ਸਬੰਧਤ ਸ਼ਿਕਾਇਤਾਂ ਦਾਇਰ ਕਰੋ ਅਤੇ ਟਰੈਕ ਕਰੋ",
+    "fileComplaint": "ਸ਼ਿਕਾਇਤ ਦਰਜ ਕਰੋ",
+    "trackComplaint": "ਟ੍ਰੈਕ ਸ਼ਿਕਾਇਤ",
+    "ticketId": "ਟਿਕਟ ਆਈ.ਡੀ",
+    "name": "ਤੁਹਾਡਾ ਨਾਮ",
+    "phone": "ਫੋਨ ਨੰਬਰ",
+    "description": "ਆਪਣੀ ਸਮੱਸਿਆ ਦਾ ਵਰਣਨ ਕਰੋ",
+    "submit": "ਸ਼ਿਕਾਇਤ ਦਰਜ ਕਰੋ",
+    "noLoginRequired": "ਕੋਈ ਲੌਗਇਨ ਲੋੜੀਂਦਾ ਨਹੀਂ ਹੈ"
+  },
+  "common": {
+    "loading": "ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+    "noData": "ਕੋਈ ਡਾਟਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ",
+    "viewAll": "ਸਭ ਦੇਖੋ",
+    "export": "ਨਿਰਯਾਤ",
+    "filter": "ਫਿਲਟਰ",
+    "search": "ਖੋਜ",
+    "hectares": "ਹਾ",
+    "crores": "ਸੀ.ਆਰ",
+    "language": "ਭਾਸ਼ਾ",
+    "darkMode": "ਡਾਰਕ ਮੋਡ",
+    "lightMode": "ਲਾਈਟ ਮੋਡ"
+  },
+  "statuses": {
+    "gazetteNotification": "ਗਜ਼ਟ ਨੋਟੀਫਿਕੇਸ਼ਨ",
+    "survey": "ਸਰਵੇਖਣ",
+    "jointMeasurement": "ਸੰਯੁਕਤ ਮਾਪ",
+    "awardDisbursement": "ਅਵਾਰਡ ਅਤੇ ਵੰਡ",
+    "compensationDisbursement": "ਮੁਆਵਜ਼ੇ ਦੀ ਵੰਡ",
+    "possessionTaken": "ਕਬਜ਼ਾ ਕਰ ਲਿਆ",
+    "completed": "ਪੂਰਾ ਹੋਇਆ"
+  },
+  "documents": {
+    "title": "ਸੁਰੱਖਿਅਤ ਦਸਤਾਵੇਜ਼ ਭੰਡਾਰ",
+    "subtitle": "ਚੇਨ-ਆਫ-ਕਸਟਡੀ ਟਰੈਕਿੰਗ ਦੇ ਨਾਲ ਕੇਂਦਰੀਕ੍ਰਿਤ, ਛੇੜਛਾੜ-ਪ੍ਰੂਫ ਸਟੋਰੇਜ",
+    "totalDocuments": "ਕੁੱਲ ਦਸਤਾਵੇਜ਼",
+    "verified": "ਹੈਸ਼ ਪ੍ਰਮਾਣਿਤ",
+    "pendingReview": "ਵਿਚਾਰ-ਅਧੀਨ ਸਮੀਖਿਆ",
+    "recentUploads": "ਹਾਲੀਆ ਅੱਪਲੋਡ",
+    "searchDocuments": "ਦਸਤਾਵੇਜ਼ ਖੋਜੋ...",
+    "uploadDocument": "ਦਸਤਾਵੇਜ਼ ਅੱਪਲੋਡ ਕਰੋ"
+  },
+  "officers": {
+    "title": "ਅਫਸਰ ਪ੍ਰਦਰਸ਼ਨ ਡੈਸ਼ਬੋਰਡ",
+    "subtitle": "ਲੀਡਰਬੋਰਡ, ਬੈਜ, ਅਤੇ ਪ੍ਰਦਰਸ਼ਨ ਟਰੈਕਿੰਗ ਦੁਆਰਾ ਉੱਤਮਤਾ ਨੂੰ ਉਤਸ਼ਾਹਿਤ ਕਰਨਾ",
+    "leaderboard": "ਲੀਡਰਬੋਰਡ",
+    "badges": "ਬੈਜ ਅਤੇ ਪ੍ਰਾਪਤੀਆਂ",
+    "trends": "ਪ੍ਰਦਰਸ਼ਨ ਰੁਝਾਨ",
+    "heatmap": "ਜ਼ਿਲ੍ਹਾ ਹੀਟਮੈਪ",
+    "allBadges": "ਸਾਰੇ ਪ੍ਰਾਪਤੀ ਬੈਜ",
+    "badgesSubtitle": "ਕਮਾਉਣ ਲਈ 12 ਵਿਲੱਖਣ ਬੈਜ — ਪ੍ਰੋਤਸਾਹਨ ਗਤੀ, ਸ਼ੁੱਧਤਾ, ਅਤੇ ਨਾਗਰਿਕ ਸੰਤੁਸ਼ਟੀ",
+    "districtHeatmap": "ਜ਼ਿਲ੍ਹਾ ਪ੍ਰਦਰਸ਼ਨ ਹੀਟਮੈਪ",
+    "heatmapSubtitle": "ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਜ਼ਿਲ੍ਹਾ-ਪੱਧਰ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਦੀ ਤੁਲਨਾ — ਲੀਡਰਬੋਰਡ ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਲਈ ਕਿਸੇ ਵੀ ਜ਼ਿਲ੍ਹੇ 'ਤੇ ਕਲਿੱਕ ਕਰੋ"
+  }
+}

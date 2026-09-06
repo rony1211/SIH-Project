@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "भूमिसेतू - राष्ट्रीय भूसंपादन प्रणाली",
+    "subtitle": "रिअल-टाइम डिजिटल मॉनिटरिंग आणि निर्णय समर्थन",
+    "tagline": "ब्रिजिंग सरकार, जमीन आणि लोक"
+  },
+  "nav": {
+    "home": "घर",
+    "dashboard": "डॅशबोर्ड",
+    "projects": "प्रकल्प",
+    "map": "भौगोलिक नकाशा",
+    "rrTracker": "आर अँड आर ट्रॅकर",
+    "documents": "कागदपत्रे",
+    "grievance": "तक्रार पोर्टल",
+    "officers": "अधिकारी कामगिरी",
+    "field": "फील्ड सत्यापन",
+    "admin": "प्रशासन पॅनेल"
+  },
+  "hero": {
+    "heading": "रिअल-टाइम राष्ट्रीय भूसंपादन प्रणाली",
+    "description": "संपूर्ण भारतभर भूसंपादन, नुकसान भरपाई वितरण आणि पुनर्वसन यांचे एंड-टू-एंड डिजिटल मॉनिटरिंग. पारदर्शकता आणि गती सशक्त करणे.",
+    "cta_dashboard": "डॅशबोर्ड पहा",
+    "cta_projects": "ट्रॅक प्रकल्प"
+  },
+  "stats": {
+    "totalProjects": "एकूण प्रकल्प",
+    "landNotified": "जमीन अधिसूचित (ह.)",
+    "landAcquired": "जमीन अधिग्रहित (हे.)",
+    "compensationDisbursed": "भरपाई वितरित (₹ कोटी)",
+    "familiesAffected": "प्रभावित कुटुंबे",
+    "familiesResettled": "कुटुंबांचे पुनर्वसन झाले",
+    "nationalProgress": "राष्ट्रीय प्रगती"
+  },
+  "dashboard": {
+    "title": "नॅशनल कमांड डॅशबोर्ड",
+    "subtitle": "संपूर्ण भारतातील भूसंपादनाचे रिअल-टाइम विहंगावलोकन",
+    "filters": "फिल्टर",
+    "stateWise": "राज्यनिहाय आढावा",
+    "timeline": "टाइमलाइन पालन",
+    "recentActivity": "अलीकडील क्रियाकलाप",
+    "notifiedVsAcquired": "अधिसूचित वि अधिग्रहित",
+    "compensationFlow": "भरपाई प्रवाह"
+  },
+  "projects": {
+    "title": "प्रोजेक्ट लाइफसायकल ट्रॅकर",
+    "subtitle": "राष्ट्रीय पायाभूत सुविधा प्रकल्पांमध्ये RFCTLARR कायदा 2013 वैधानिक टप्पे ट्रॅक करा",
+    "search": "प्रकल्प शोधा...",
+    "filterByState": "सर्व राज्ये",
+    "filterByStatus": "सर्व स्थिती",
+    "filterByAgency": "सर्व एजन्सी",
+    "criticalOnly": "फक्त गंभीर",
+    "totalArea": "एकूण क्षेत्रफळ",
+    "acquiredArea": "अधिग्रहित क्षेत्र",
+    "landAcquired": "जमीन घेतली",
+    "budgetAllocated": "बजेट वाटप",
+    "budgetUtilized": "बजेट वापरले",
+    "budget": "बजेट",
+    "spent": "खर्च केला",
+    "disbursed": "वितरित केले",
+    "timeline": "टाइमलाइन",
+    "status": "स्थिती",
+    "viewDetails": "वैधानिक तपशील पहा",
+    "backToProjects": "प्रकल्पांकडे परत",
+    "statutoryTimeline": "RFCTLARR कायदा 2013 — वैधानिक टाइमलाइन",
+    "milestones": "टप्पे",
+    "families": "कुटुंबे",
+    "resettled": "पुनर्वसन केले",
+    "activeProjects": "सक्रिय प्रकल्प",
+    "criticalBottlenecks": "गंभीर अडथळे",
+    "gridView": "ग्रिड",
+    "kanbanView": "कानबन",
+    "tableView": "टेबल",
+    "noProjects": "तुमच्या निकषांशी जुळणारे कोणतेही प्रकल्प आढळले नाहीत."
+  },
+  "rr": {
+    "title": "पुनर्वसन आणि पुनर्वसन ट्रॅकर",
+    "subtitle": "प्रभावित कुटुंबांसाठी हक्क आणि पुनर्वसन प्रगतीचा मागोवा घ्या",
+    "housing": "गृहनिर्माण",
+    "employment": "रोजगार",
+    "annuity": "वार्षिकी",
+    "transport": "वाहतूक भत्ता",
+    "familyId": "कौटुंबिक आयडी",
+    "headOfFamily": "कुटुंब प्रमुख",
+    "village": "गाव",
+    "overallProgress": "एकूणच प्रगती"
+  },
+  "grievance": {
+    "title": "नागरिक तक्रार पोर्टल",
+    "subtitle": "भूसंपादनाशी संबंधित तक्रारी फाईल आणि ट्रॅक करा",
+    "fileComplaint": "तक्रार दाखल करा",
+    "trackComplaint": "तक्रारीचा मागोवा घ्या",
+    "ticketId": "तिकीट आयडी",
+    "name": "तुमचे नाव",
+    "phone": "फोन नंबर",
+    "description": "तुमच्या समस्येचे वर्णन करा",
+    "submit": "तक्रार सबमिट करा",
+    "noLoginRequired": "लॉगिन आवश्यक नाही"
+  },
+  "common": {
+    "loading": "लोड करत आहे...",
+    "noData": "कोणताही डेटा उपलब्ध नाही",
+    "viewAll": "सर्व पहा",
+    "export": "निर्यात करा",
+    "filter": "फिल्टर करा",
+    "search": "शोधा",
+    "hectares": "हा",
+    "crores": "क्र",
+    "language": "भाषा",
+    "darkMode": "गडद मोड",
+    "lightMode": "लाइट मोड"
+  },
+  "statuses": {
+    "gazetteNotification": "राजपत्र अधिसूचना",
+    "survey": "सर्वेक्षण",
+    "jointMeasurement": "संयुक्त मापन",
+    "awardDisbursement": "पुरस्कार आणि वितरण",
+    "compensationDisbursement": "भरपाईचे वितरण",
+    "possessionTaken": "ताबा घेतला",
+    "completed": "पूर्ण झाले"
+  },
+  "documents": {
+    "title": "सुरक्षित दस्तऐवज भांडार",
+    "subtitle": "चेन-ऑफ-कस्टडी ट्रॅकिंगसह केंद्रीकृत, छेडछाड-प्रूफ स्टोरेज",
+    "totalDocuments": "एकूण कागदपत्रे",
+    "verified": "हॅश सत्यापित",
+    "pendingReview": "प्रलंबित पुनरावलोकन",
+    "recentUploads": "अलीकडील अपलोड",
+    "searchDocuments": "कागदपत्रे शोधा...",
+    "uploadDocument": "दस्तऐवज अपलोड करा"
+  },
+  "officers": {
+    "title": "अधिकारी कामगिरी डॅशबोर्ड",
+    "subtitle": "लीडरबोर्ड, बॅज आणि कार्यप्रदर्शन ट्रॅकिंगद्वारे उत्कृष्टतेला प्रोत्साहन देणे",
+    "leaderboard": "लीडरबोर्ड",
+    "badges": "बॅज आणि उपलब्धी",
+    "trends": "कामगिरी ट्रेंड",
+    "heatmap": "जिल्हा हीटमॅप",
+    "allBadges": "सर्व अचिव्हमेंट बॅज",
+    "badgesSubtitle": "मिळवण्यासाठी 12 अद्वितीय बॅज — वेग, अचूकता आणि नागरिकांचे समाधान प्रोत्साहन देणारे",
+    "districtHeatmap": "जिल्हा कामगिरी हीटमॅप",
+    "heatmapSubtitle": "एका दृष्टीक्षेपात जिल्हा-स्तरीय कामगिरी तुलना — लीडरबोर्ड फिल्टर करण्यासाठी कोणत्याही जिल्ह्यावर क्लिक करा"
+  }
+}

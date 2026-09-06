@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "BhumiSetu - قومي زمين حاصل ڪرڻ وارو نظام",
+    "subtitle": "حقيقي وقت ڊجيٽل نگراني ۽ فيصلي جي حمايت",
+    "tagline": "برجنگ حڪومت، زمين ۽ ماڻهو"
+  },
+  "nav": {
+    "home": "گهر",
+    "dashboard": "ڊيش بورڊ",
+    "projects": "منصوبا",
+    "map": "جغرافيائي نقشو",
+    "rrTracker": "آر اينڊ آر ٽريڪٽر",
+    "documents": "دستاويز",
+    "grievance": "شڪايت پورٽل",
+    "officers": "آفيسر جي ڪارڪردگي",
+    "field": "فيلڊ جي تصديق",
+    "admin": "انتظامي پينل"
+  },
+  "hero": {
+    "heading": "حقيقي وقت قومي زمين جي حصول جو نظام",
+    "description": "سڄي هندستان ۾ زمين جي حصول، معاوضي جي ادائيگي، ۽ بحالي جي آخر تائين ڊجيٽل نگراني. شفافيت ۽ رفتار کي مضبوط ڪرڻ.",
+    "cta_dashboard": "ڊيش بورڊ ڏسو",
+    "cta_projects": "ٽريڪ منصوبن"
+  },
+  "stats": {
+    "totalProjects": "کل منصوبا",
+    "landNotified": "زمين جي اطلاع (Ha)",
+    "landAcquired": "حاصل ڪيل زمين (Ha)",
+    "compensationDisbursed": "معاوضو ڏنو ويو (₹ ڪروڙ)",
+    "familiesAffected": "متاثر ٿيل خاندان",
+    "familiesResettled": "خاندانن کي ٻيهر آباد ڪيو ويو",
+    "nationalProgress": "قومي ترقي"
+  },
+  "dashboard": {
+    "title": "نيشنل ڪمانڊ ڊيش بورڊ",
+    "subtitle": "سڄي هندستان ۾ زمين جي حصول جو حقيقي وقت جو جائزو",
+    "filters": "فلٽر",
+    "stateWise": "رياست وار جائزو",
+    "timeline": "ٽائم لائن جي تعميل",
+    "recentActivity": "تازي سرگرمي",
+    "notifiedVsAcquired": "نوٽيفڪيشن بمقابله حاصل ڪيل",
+    "compensationFlow": "معاوضي وارو وهڪرو"
+  },
+  "projects": {
+    "title": "پروجيڪٽ لائف سائيڪل ٽريڪٽر",
+    "subtitle": "ٽريڪ ڪريو RFCTLARR ايڪٽ 2013 قومي انفراسٽرڪچر منصوبن ۾ قانوني سنگ ميل",
+    "search": "منصوبا ڳولھيو...",
+    "filterByState": "سڀ رياستون",
+    "filterByStatus": "سڀ اسٽيٽس",
+    "filterByAgency": "سڀ ايجنسيون",
+    "criticalOnly": "صرف نازڪ",
+    "totalArea": "ڪل ايراضي",
+    "acquiredArea": "حاصل ڪيل علائقو",
+    "landAcquired": "حاصل ڪيل زمين",
+    "budgetAllocated": "مختص ڪيل بجيٽ",
+    "budgetUtilized": "استعمال ٿيل بجيٽ",
+    "budget": "بجيٽ",
+    "spent": "خرچ",
+    "disbursed": "ورهايل",
+    "timeline": "ٽائيم لائن",
+    "status": "حيثيت",
+    "viewDetails": "ڏسو قانوني تفصيل",
+    "backToProjects": "منصوبن ڏانهن واپس",
+    "statutoryTimeline": "RFCTLARR ايڪٽ 2013 - قانوني ٽائم لائن",
+    "milestones": "سنگ ميل",
+    "families": "خاندانن",
+    "resettled": "آباد ٿيل",
+    "activeProjects": "فعال منصوبا",
+    "criticalBottlenecks": "نازڪ رڪاوٽون",
+    "gridView": "گرڊ",
+    "kanbanView": "ڪنبن",
+    "tableView": "ٽيبل",
+    "noProjects": "توهان جي معيار سان ملندڙ ڪو به پروجيڪٽ نه مليو."
+  },
+  "rr": {
+    "title": "بحالي ۽ آبادڪاري ٽريڪٽر",
+    "subtitle": "متاثر خاندانن لاءِ حقدار ۽ آبادڪاري جي اڳڀرائي کي ٽريڪ ڪريو",
+    "housing": "هائوسنگ",
+    "employment": "روزگار",
+    "annuity": "ساليانو",
+    "transport": "ٽرانسپورٽ الائونس",
+    "familyId": "خانداني ID",
+    "headOfFamily": "خاندان جو سربراهه",
+    "village": "ڳوٺ",
+    "overallProgress": "مجموعي ترقي"
+  },
+  "grievance": {
+    "title": "شهرين جي شڪايت پورٽل",
+    "subtitle": "زمين جي حصول سان لاڳاپيل شڪايتون فائل ۽ ٽريڪ ڪريو",
+    "fileComplaint": "هڪ شڪايت داخل ڪريو",
+    "trackComplaint": "ٽريڪ شڪايت",
+    "ticketId": "ٽڪيٽ ID",
+    "name": "توهان جو نالو",
+    "phone": "فون نمبر",
+    "description": "توھان جو مسئلو بيان ڪريو",
+    "submit": "شڪايت داخل ڪريو",
+    "noLoginRequired": "لاگ ان جي ضرورت ناهي"
+  },
+  "common": {
+    "loading": "لوڊ ٿي رهيو آهي...",
+    "noData": "ڪابه ڊيٽا موجود ناهي",
+    "viewAll": "سڀ ڏسو",
+    "export": "برآمد",
+    "filter": "فلٽر",
+    "search": "ڳولا",
+    "hectares": "ها",
+    "crores": "Cr",
+    "language": "ٻولي",
+    "darkMode": "ڊارڪ موڊ",
+    "lightMode": "روشني موڊ"
+  },
+  "statuses": {
+    "gazetteNotification": "گزيٽ نوٽيفڪيشن",
+    "survey": "سروي",
+    "jointMeasurement": "گڏيل ماپ",
+    "awardDisbursement": "انعام ۽ تقسيم",
+    "compensationDisbursement": "معاوضي جي ادائيگي",
+    "possessionTaken": "قبضو ڪيو ويو",
+    "completed": "مڪمل ٿيو"
+  },
+  "documents": {
+    "title": "محفوظ دستاويزي مخزن",
+    "subtitle": "سينٽرلائيزڊ، ٽمپر پروف اسٽوريج چين جي حراست جي ٽريڪنگ سان",
+    "totalDocuments": "ڪل دستاويز",
+    "verified": "Hash تصديق ٿيل",
+    "pendingReview": "التوا جو جائزو",
+    "recentUploads": "تازو اپلوڊ",
+    "searchDocuments": "دستاويز ڳوليو...",
+    "uploadDocument": "اپ لوڊ ڪريو دستاويز"
+  },
+  "officers": {
+    "title": "آفيسر ڪارڪردگي ڊيش بورڊ",
+    "subtitle": "ليڊر بورڊز، بيجز، ۽ ڪارڪردگي جي ٽريڪنگ ذريعي شانداريت جي ترغيب ڏيڻ",
+    "leaderboard": "ليڊر بورڊ",
+    "badges": "بيجز ۽ حاصلات",
+    "trends": "ڪارڪردگي جي رجحانات",
+    "heatmap": "ضلعي هيٽ ميپ",
+    "allBadges": "سڀ حاصلات جا بيج",
+    "badgesSubtitle": "ڪمائڻ لاءِ 12 منفرد بيجز - ترغيب ڏيڻ جي رفتار، درستگي ۽ شهرين جي اطمينان",
+    "districtHeatmap": "ضلعي ڪارڪردگي جو هيٽ ميپ",
+    "heatmapSubtitle": "هڪ نظر ۾ ضلعي سطح جي ڪارڪردگي جو مقابلو — ليڊر بورڊ کي فلٽر ڪرڻ لاءِ ڪنهن به ضلعي تي ڪلڪ ڪريو"
+  }
+}

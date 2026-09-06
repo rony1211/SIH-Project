@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "ભૂમિસેતુ - રાષ્ટ્રીય જમીન સંપાદન પ્રણાલી",
+    "subtitle": "રીઅલ-ટાઇમ ડિજિટલ મોનિટરિંગ અને નિર્ણય સપોર્ટ",
+    "tagline": "સરકાર, જમીન અને લોકોનું જોડાણ"
+  },
+  "nav": {
+    "home": "ઘર",
+    "dashboard": "ડેશબોર્ડ",
+    "projects": "પ્રોજેક્ટ્સ",
+    "map": "ભૌગોલિક નકશો",
+    "rrTracker": "આર એન્ડ આર ટ્રેકર",
+    "documents": "દસ્તાવેજો",
+    "grievance": "ફરિયાદ પોર્ટલ",
+    "officers": "અધિકારીની કામગીરી",
+    "field": "ક્ષેત્ર ચકાસણી",
+    "admin": "એડમિન પેનલ"
+  },
+  "hero": {
+    "heading": "રીઅલ-ટાઇમ નેશનલ લેન્ડ એક્વિઝિશન સિસ્ટમ",
+    "description": "સમગ્ર ભારતમાં જમીન સંપાદન, વળતર વિતરણ અને પુનર્વસનનું એન્ડ-ટુ-એન્ડ ડિજિટલ મોનિટરિંગ. પારદર્શિતા અને ઝડપને સશક્ત બનાવવું.",
+    "cta_dashboard": "ડેશબોર્ડ જુઓ",
+    "cta_projects": "ટ્રૅક પ્રોજેક્ટ્સ"
+  },
+  "stats": {
+    "totalProjects": "કુલ પ્રોજેક્ટ્સ",
+    "landNotified": "જમીન સૂચિત (હે.)",
+    "landAcquired": "જમીન સંપાદિત (હે.)",
+    "compensationDisbursed": "વિતરિત વળતર (₹ કરોડ)",
+    "familiesAffected": "અસરગ્રસ્ત પરિવારો",
+    "familiesResettled": "પરિવારો પુનઃસ્થાપિત",
+    "nationalProgress": "રાષ્ટ્રીય પ્રગતિ"
+  },
+  "dashboard": {
+    "title": "નેશનલ કમાન્ડ ડેશબોર્ડ",
+    "subtitle": "સમગ્ર ભારતમાં જમીન સંપાદનનું વાસ્તવિક સમયનું વિહંગાવલોકન",
+    "filters": "ફિલ્ટર્સ",
+    "stateWise": "રાજ્ય મુજબની ઝાંખી",
+    "timeline": "સમયરેખા પાલન",
+    "recentActivity": "તાજેતરની પ્રવૃત્તિ",
+    "notifiedVsAcquired": "સૂચિત વિ હસ્તગત",
+    "compensationFlow": "વળતર પ્રવાહ"
+  },
+  "projects": {
+    "title": "પ્રોજેક્ટ લાઇફસાઇકલ ટ્રેકર",
+    "subtitle": "સમગ્ર રાષ્ટ્રીય ઈન્ફ્રાસ્ટ્રક્ચર પ્રોજેક્ટ્સમાં RFCTLARR એક્ટ 2013 વૈધાનિક સીમાચિહ્નો પર નજર રાખો",
+    "search": "પ્રોજેક્ટ્સ શોધો...",
+    "filterByState": "તમામ રાજ્યો",
+    "filterByStatus": "બધા સ્ટેટસ",
+    "filterByAgency": "તમામ એજન્સીઓ",
+    "criticalOnly": "માત્ર જટિલ",
+    "totalArea": "કુલ વિસ્તાર",
+    "acquiredArea": "હસ્તગત વિસ્તાર",
+    "landAcquired": "જમીન સંપાદિત",
+    "budgetAllocated": "બજેટ ફાળવેલ",
+    "budgetUtilized": "બજેટનો ઉપયોગ",
+    "budget": "બજેટ",
+    "spent": "ખર્ચ્યા",
+    "disbursed": "વિતરિત",
+    "timeline": "સમયરેખા",
+    "status": "સ્થિતિ",
+    "viewDetails": "વૈધાનિક વિગતો જુઓ",
+    "backToProjects": "પ્રોજેક્ટ્સ પર પાછા જાઓ",
+    "statutoryTimeline": "RFCTLARR એક્ટ 2013 — વૈધાનિક સમયરેખા",
+    "milestones": "માઈલસ્ટોન્સ",
+    "families": "પરિવારો",
+    "resettled": "પુનઃસ્થાપિત",
+    "activeProjects": "સક્રિય પ્રોજેક્ટ્સ",
+    "criticalBottlenecks": "જટિલ અવરોધો",
+    "gridView": "ગ્રીડ",
+    "kanbanView": "કાનબન",
+    "tableView": "ટેબલ",
+    "noProjects": "તમારા માપદંડ સાથે મેળ ખાતો કોઈ પ્રોજેક્ટ મળ્યો નથી."
+  },
+  "rr": {
+    "title": "પુનર્વસન અને પુનર્વસન ટ્રેકર",
+    "subtitle": "અસરગ્રસ્ત પરિવારો માટે હક અને પુનઃસ્થાપનની પ્રગતિ પર નજર રાખો",
+    "housing": "હાઉસિંગ",
+    "employment": "રોજગાર",
+    "annuity": "વાર્ષિકી",
+    "transport": "પરિવહન ભથ્થું",
+    "familyId": "કુટુંબ ID",
+    "headOfFamily": "કુટુંબના વડા",
+    "village": "ગામ",
+    "overallProgress": "એકંદરે પ્રગતિ"
+  },
+  "grievance": {
+    "title": "નાગરિક ફરિયાદ પોર્ટલ",
+    "subtitle": "જમીન સંપાદન સંબંધિત ફરિયાદો ફાઇલ કરો અને ટ્રેક કરો",
+    "fileComplaint": "ફરિયાદ દાખલ કરો",
+    "trackComplaint": "ટ્રૅક ફરિયાદ",
+    "ticketId": "ટિકિટ ID",
+    "name": "તમારું નામ",
+    "phone": "ફોન નંબર",
+    "description": "તમારી સમસ્યાનું વર્ણન કરો",
+    "submit": "ફરિયાદ સબમિટ કરો",
+    "noLoginRequired": "કોઈ લૉગિન જરૂરી નથી"
+  },
+  "common": {
+    "loading": "લોડ કરી રહ્યું છે...",
+    "noData": "કોઈ ડેટા ઉપલબ્ધ નથી",
+    "viewAll": "બધા જુઓ",
+    "export": "નિકાસ કરો",
+    "filter": "ફિલ્ટર કરો",
+    "search": "શોધો",
+    "hectares": "હા",
+    "crores": "ક્ર",
+    "language": "ભાષા",
+    "darkMode": "ડાર્ક મોડ",
+    "lightMode": "લાઇટ મોડ"
+  },
+  "statuses": {
+    "gazetteNotification": "ગેઝેટ નોટિફિકેશન",
+    "survey": "સર્વે",
+    "jointMeasurement": "સંયુક્ત માપન",
+    "awardDisbursement": "પુરસ્કાર અને વિતરણ",
+    "compensationDisbursement": "વળતર વિતરણ",
+    "possessionTaken": "કબજો મેળવ્યો",
+    "completed": "પૂર્ણ થયું"
+  },
+  "documents": {
+    "title": "સુરક્ષિત દસ્તાવેજ ભંડાર",
+    "subtitle": "સાંકળ-ઓફ-કસ્ટડી ટ્રેકિંગ સાથે કેન્દ્રીયકૃત, ટેમ્પર-પ્રૂફ સ્ટોરેજ",
+    "totalDocuments": "કુલ દસ્તાવેજો",
+    "verified": "હેશ વેરિફાઈડ",
+    "pendingReview": "બાકી સમીક્ષા",
+    "recentUploads": "તાજેતરના અપલોડ્સ",
+    "searchDocuments": "દસ્તાવેજો શોધો...",
+    "uploadDocument": "દસ્તાવેજ અપલોડ કરો"
+  },
+  "officers": {
+    "title": "ઓફિસર પરફોર્મન્સ ડેશબોર્ડ",
+    "subtitle": "લીડરબોર્ડ્સ, બેજ અને પ્રદર્શન ટ્રેકિંગ દ્વારા ઉત્કૃષ્ટતાને પ્રોત્સાહન આપવું",
+    "leaderboard": "લીડરબોર્ડ",
+    "badges": "બેજ અને સિદ્ધિઓ",
+    "trends": "પ્રદર્શન વલણો",
+    "heatmap": "જિલ્લા હીટમેપ",
+    "allBadges": "બધા સિદ્ધિ બેજેસ",
+    "badgesSubtitle": "કમાવવા માટે 12 અનન્ય બેજેસ — પ્રોત્સાહક ઝડપ, ચોકસાઈ અને નાગરિક સંતોષ",
+    "districtHeatmap": "જિલ્લા પ્રદર્શન હીટમેપ",
+    "heatmapSubtitle": "એક નજરમાં જિલ્લા-સ્તરની કામગીરીની સરખામણી — લીડરબોર્ડને ફિલ્ટર કરવા માટે કોઈપણ જિલ્લાને ક્લિક કરો"
+  }
+}

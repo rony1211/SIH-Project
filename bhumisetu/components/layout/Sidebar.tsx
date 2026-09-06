@@ -7,7 +7,7 @@ import { useSidebarStore, useThemeStore } from '@/lib/store';
 import {
   HiOutlineHome, HiOutlineChartBarSquare, HiOutlineFolder,
   HiOutlineMap, HiOutlineUserGroup, HiOutlineDocumentText,
-  HiOutlineMegaphone, HiOutlineDevicePhoneMobile, HiOutlineCog6Tooth,
+  HiOutlineMegaphone, HiOutlineTrophy, HiOutlineDevicePhoneMobile, HiOutlineCog6Tooth,
   HiOutlineXMark
 } from 'react-icons/hi2';
 
@@ -19,6 +19,7 @@ const navItems = [
   { href: '/rr-tracker', icon: HiOutlineUserGroup, key: 'rrTracker' },
   { href: '/documents', icon: HiOutlineDocumentText, key: 'documents' },
   { href: '/grievance', icon: HiOutlineMegaphone, key: 'grievance' },
+  { href: '/officers', icon: HiOutlineTrophy, key: 'officers' },
   { href: '/field', icon: HiOutlineDevicePhoneMobile, key: 'field' },
   { href: '/admin', icon: HiOutlineCog6Tooth, key: 'admin' },
 ];
