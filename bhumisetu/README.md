@@ -12,6 +12,7 @@ BhumiSetu is a unified digital platform developed for the Ministry of Rural Deve
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Charts**: [Recharts](https://recharts.org/)
 - **Localization**: `next-intl` (Support for 22 Indian Languages)
+- 
 
 ## 📁 Project Structure
 
@@ -26,6 +27,7 @@ bhumisetu/
 ├── docs/                 # Documentation (Architecture, Problem Statement)
 └── .agents/              # AI Agent Guidelines & Rules (Do not delete)
 ```
+
 
 ## 🛠️ Getting Started
 
