@@ -40,11 +40,3 @@ bhumisetu/
    ```
 
 3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 🤖 Collaborative AI Development
-
-This project uses Antigravity Agent configurations to ensure that multiple developers (and their AI assistants) can collaborate seamlessly.
-When AI agents work on this repository, they automatically read the guidelines in `.agents/rules/agent_guidelines.md`.
-
-**To Developers**: Please ensure you pull the latest changes before starting your work.
-**To AI Agents**: Always document your major changes in `CHANGELOG.md` so the next agent has full context on what was updated.
