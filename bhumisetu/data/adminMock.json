@@ -1,0 +1,106 @@
+{
+  "systemHealth": {
+    "status": "Operational",
+    "uptime": "99.98%",
+    "apiLatency": "42ms",
+    "dbLoad": "34%",
+    "activeUsers": 284,
+    "syncSuccessRate": "99.2%"
+  },
+  "users": [
+    {
+      "id": "USR-001",
+      "name": "Arun Kumar",
+      "email": "arun.kumar@nic.in",
+      "role": "Super Admin",
+      "department": "Ministry of Rural Development",
+      "status": "Active",
+      "lastActive": "2026-09-06T10:15:00Z"
+    },
+    {
+      "id": "USR-002",
+      "name": "Ramesh Patel",
+      "email": "ramesh.p@gujarat.gov.in",
+      "role": "Field Officer",
+      "department": "Land Acquisition",
+      "status": "Active",
+      "lastActive": "2026-09-06T09:45:00Z"
+    },
+    {
+      "id": "USR-003",
+      "name": "Priya Sharma",
+      "email": "priya.s@nhai.org",
+      "role": "Project Manager",
+      "department": "NHAI",
+      "status": "Active",
+      "lastActive": "2026-09-05T16:20:00Z"
+    },
+    {
+      "id": "USR-004",
+      "name": "Vikram Singh",
+      "email": "vikram.singh@rr.gov.in",
+      "role": "R&R Director",
+      "department": "Rehabilitation & Resettlement",
+      "status": "Inactive",
+      "lastActive": "2026-08-30T11:10:00Z"
+    },
+    {
+      "id": "USR-005",
+      "name": "Anita Devi",
+      "email": "anita.d@haryana.gov.in",
+      "role": "Field Officer",
+      "department": "Land Acquisition",
+      "status": "Suspended",
+      "lastActive": "2026-09-01T14:30:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG-891",
+      "timestamp": "2026-09-06T10:12:34Z",
+      "user": "Ramesh Patel",
+      "action": "Completed Aadhaar Verification",
+      "module": "Field Verification",
+      "severity": "Info"
+    },
+    {
+      "id": "LOG-890",
+      "timestamp": "2026-09-06T10:05:12Z",
+      "user": "Arun Kumar",
+      "action": "Updated Global SLA Threshold from 48h to 24h",
+      "module": "Settings",
+      "severity": "Warning"
+    },
+    {
+      "id": "LOG-889",
+      "timestamp": "2026-09-06T09:45:00Z",
+      "user": "System",
+      "action": "Database Backup Completed",
+      "module": "System",
+      "severity": "Info"
+    },
+    {
+      "id": "LOG-888",
+      "timestamp": "2026-09-05T18:20:10Z",
+      "user": "Priya Sharma",
+      "action": "Approved ₹15 Cr compensation for Phase 1",
+      "module": "Projects",
+      "severity": "Critical"
+    },
+    {
+      "id": "LOG-887",
+      "timestamp": "2026-09-05T14:10:00Z",
+      "user": "Anita Devi",
+      "action": "Failed Login Attempt (3/3)",
+      "module": "Auth",
+      "severity": "Warning"
+    }
+  ],
+  "settings": {
+    "autoApproveDBT": false,
+    "strictSLAEnforcement": true,
+    "maxFieldSyncRetries": 3,
+    "dataRetentionDays": 365,
+    "maintenanceMode": false
+  }
+}
