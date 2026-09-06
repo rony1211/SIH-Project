@@ -41,17 +41,35 @@
     "compensationFlow": "मुआवजा प्रवाह"
   },
   "projects": {
-    "title": "परियोजना ट्रैकर",
+    "title": "परियोजना जीवनचक्र ट्रैकर",
+    "subtitle": "राष्ट्रीय अवसंरचना परियोजनाओं में RFCTLARR अधिनियम 2013 के वैधानिक मील के पत्थरों को ट्रैक करें",
     "search": "परियोजनाएँ खोजें...",
-    "filterByState": "राज्य द्वारा फ़िल्टर करें",
-    "filterByStatus": "स्थिति द्वारा फ़िल्टर करें",
+    "filterByState": "सभी राज्य",
+    "filterByStatus": "सभी स्थितियाँ",
+    "filterByAgency": "सभी एजेंसियाँ",
+    "criticalOnly": "केवल गंभीर",
     "totalArea": "कुल क्षेत्रफल",
     "acquiredArea": "अधिग्रहित क्षेत्रफल",
+    "landAcquired": "भूमि अधिग्रहित",
+    "budgetAllocated": "बजट आवंटित",
+    "budgetUtilized": "बजट उपयोगित",
     "budget": "बजट",
     "spent": "व्यय",
+    "disbursed": "वितरित",
     "timeline": "समयसीमा",
     "status": "स्थिति",
-    "viewDetails": "विवरण देखें"
+    "viewDetails": "वैधानिक विवरण देखें",
+    "backToProjects": "परियोजनाओं पर वापस",
+    "statutoryTimeline": "RFCTLARR अधिनियम 2013 — वैधानिक समयरेखा",
+    "milestones": "मील के पत्थर",
+    "families": "परिवार",
+    "resettled": "पुनर्वासित",
+    "activeProjects": "सक्रिय परियोजनाएँ",
+    "criticalBottlenecks": "गंभीर अड़चनें",
+    "gridView": "ग्रिड",
+    "kanbanView": "कानबान",
+    "tableView": "तालिका",
+    "noProjects": "आपके मानदंडों से मेल खाती कोई परियोजना नहीं मिली।"
   },
   "rr": {
     "title": "पुनर्वास एवं पुनर्स्थापन ट्रैकर",
@@ -98,5 +116,15 @@
     "compensationDisbursement": "मुआवजा वितरण",
     "possessionTaken": "कब्ज़ा लिया गया",
     "completed": "पूर्ण"
+  },
+  "documents": {
+    "title": "सुरक्षित दस्तावेज़ रिपॉजिटरी",
+    "subtitle": "चेन-ऑफ-कस्टडी ट्रैकिंग के साथ केंद्रीकृत, छेड़छाड़-प्रूफ भंडारण",
+    "totalDocuments": "कुल दस्तावेज़",
+    "verified": "हैश सत्यापित",
+    "pendingReview": "समीक्षा लंबित",
+    "recentUploads": "हाल के अपलोड",
+    "searchDocuments": "दस्तावेज़ खोजें...",
+    "uploadDocument": "दस्तावेज़ अपलोड करें"
   }
 }

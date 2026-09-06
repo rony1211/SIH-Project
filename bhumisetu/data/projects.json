@@ -15,7 +15,18 @@
     "budgetCr": 1200,
     "spentCr": 850,
     "criticalBottleneck": false,
-    "overlapWarnings": ["Forest Zone C", "River Buffer"]
+    "overlapWarnings": ["Forest Zone C", "River Buffer"],
+    "coordinates": { "lat": 19.6967, "lng": 72.7699 },
+    "milestones": [
+      { "section": "Sec 4", "title": "Preliminary Survey", "status": "completed", "startDate": "2024-03-15", "endDate": "2024-05-20", "officer": "D.K. Sharma, CALA", "remarks": "Survey of 450 Ha completed" },
+      { "section": "Sec 6", "title": "Social Impact Assessment", "status": "completed", "startDate": "2024-05-25", "endDate": "2024-09-10", "officer": "NITI Aayog Panel", "remarks": "SIA Report approved by Expert Group" },
+      { "section": "Sec 11", "title": "Preliminary Notification", "status": "completed", "startDate": "2024-09-15", "endDate": "2024-10-01", "officer": "Collector, Palghar", "remarks": "Gazette notification published" },
+      { "section": "Sec 15", "title": "Objections & Hearing", "status": "completed", "startDate": "2024-10-05", "endDate": "2024-12-20", "officer": "Collector, Palghar", "remarks": "142 objections heard, 38 upheld" },
+      { "section": "Sec 19", "title": "Declaration of Acquisition", "status": "completed", "startDate": "2025-01-10", "endDate": "2025-01-25", "officer": "State Govt.", "remarks": "Declaration for 412 Ha published" },
+      { "section": "Sec 23", "title": "Award & Compensation", "status": "in-progress", "startDate": "2025-02-01", "endDate": null, "officer": "CALA, Palghar", "remarks": "680 of 850 families compensated" },
+      { "section": "Sec 38", "title": "Possession & Handover", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "Awaiting full compensation" },
+      { "section": "R&R", "title": "Rehabilitation & Resettlement", "status": "in-progress", "startDate": "2025-03-01", "endDate": null, "officer": "R&R Commissioner", "remarks": "620 of 850 families resettled" }
+    ]
   },
   {
     "id": "PRJ-RLY-089",
@@ -33,7 +44,18 @@
     "budgetCr": 3400,
     "spentCr": 3200,
     "criticalBottleneck": false,
-    "overlapWarnings": []
+    "overlapWarnings": [],
+    "coordinates": { "lat": 21.1702, "lng": 72.8311 },
+    "milestones": [
+      { "section": "Sec 4", "title": "Preliminary Survey", "status": "completed", "startDate": "2023-01-10", "endDate": "2023-03-20", "officer": "DFCCIL Survey Team", "remarks": "1200 Ha surveyed across 45 villages" },
+      { "section": "Sec 6", "title": "Social Impact Assessment", "status": "completed", "startDate": "2023-03-25", "endDate": "2023-07-15", "officer": "IIT Gandhinagar Panel", "remarks": "SIA approved" },
+      { "section": "Sec 11", "title": "Preliminary Notification", "status": "completed", "startDate": "2023-07-20", "endDate": "2023-08-01", "officer": "Collector, Surat", "remarks": "Published in Gujarat Gazette" },
+      { "section": "Sec 15", "title": "Objections & Hearing", "status": "completed", "startDate": "2023-08-05", "endDate": "2023-11-30", "officer": "Collector, Surat", "remarks": "310 objections heard, all resolved" },
+      { "section": "Sec 19", "title": "Declaration of Acquisition", "status": "completed", "startDate": "2023-12-10", "endDate": "2023-12-25", "officer": "State Govt.", "remarks": "Full area declared" },
+      { "section": "Sec 23", "title": "Award & Compensation", "status": "completed", "startDate": "2024-01-05", "endDate": "2024-08-15", "officer": "CALA, Surat", "remarks": "All 2100 families compensated" },
+      { "section": "Sec 38", "title": "Possession & Handover", "status": "completed", "startDate": "2024-08-20", "endDate": "2025-02-28", "officer": "Collector, Surat", "remarks": "Land handed over to DFCCIL" },
+      { "section": "R&R", "title": "Rehabilitation & Resettlement", "status": "completed", "startDate": "2024-02-01", "endDate": "2025-05-30", "officer": "R&R Commissioner", "remarks": "2050 of 2100 families resettled" }
+    ]
   },
   {
     "id": "PRJ-IRR-042",
@@ -52,7 +74,18 @@
     "spentCr": 1200,
     "criticalBottleneck": true,
     "bottleneckReason": "Pending Environmental Clearance for Forest Land",
-    "overlapWarnings": ["Panna Tiger Reserve Buffer"]
+    "overlapWarnings": ["Panna Tiger Reserve Buffer"],
+    "coordinates": { "lat": 25.3176, "lng": 80.3399 },
+    "milestones": [
+      { "section": "Sec 4", "title": "Preliminary Survey", "status": "completed", "startDate": "2025-01-20", "endDate": "2025-04-30", "officer": "NWDA Survey Division", "remarks": "8500 Ha survey across MP & UP" },
+      { "section": "Sec 6", "title": "Social Impact Assessment", "status": "completed", "startDate": "2025-05-10", "endDate": "2025-09-25", "officer": "TISS Mumbai Panel", "remarks": "Extensive SIA covering 4200 families" },
+      { "section": "Sec 11", "title": "Preliminary Notification", "status": "in-progress", "startDate": "2025-10-01", "endDate": null, "officer": "Collector, Banda", "remarks": "Partial notification — forest clearance pending" },
+      { "section": "Sec 15", "title": "Objections & Hearing", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "Blocked by forest clearance delay" },
+      { "section": "Sec 19", "title": "Declaration of Acquisition", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 23", "title": "Award & Compensation", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 38", "title": "Possession & Handover", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "R&R", "title": "Rehabilitation & Resettlement", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "Provisional R&R scheme under review" }
+    ]
   },
   {
     "id": "PRJ-RE-112",
@@ -70,7 +103,18 @@
     "budgetCr": 650,
     "spentCr": 15,
     "criticalBottleneck": false,
-    "overlapWarnings": []
+    "overlapWarnings": [],
+    "coordinates": { "lat": 23.7337, "lng": 69.8597 },
+    "milestones": [
+      { "section": "Sec 4", "title": "Preliminary Survey", "status": "completed", "startDate": "2026-05-10", "endDate": "2026-06-30", "officer": "SECI Field Team", "remarks": "5000 Ha desert land surveyed" },
+      { "section": "Sec 6", "title": "Social Impact Assessment", "status": "in-progress", "startDate": "2026-07-05", "endDate": null, "officer": "CEPT Ahmedabad", "remarks": "SIA ongoing — minimal displacement expected" },
+      { "section": "Sec 11", "title": "Preliminary Notification", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 15", "title": "Objections & Hearing", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 19", "title": "Declaration of Acquisition", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 23", "title": "Award & Compensation", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 38", "title": "Possession & Handover", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "R&R", "title": "Rehabilitation & Resettlement", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" }
+    ]
   },
   {
     "id": "PRJ-NHAI-099",
@@ -88,6 +132,105 @@
     "budgetCr": 2100,
     "spentCr": 1800,
     "criticalBottleneck": false,
-    "overlapWarnings": ["Litigation in 4 Parcels"]
+    "overlapWarnings": ["Litigation in 4 Parcels"],
+    "coordinates": { "lat": 12.9165, "lng": 79.1325 },
+    "milestones": [
+      { "section": "Sec 4", "title": "Preliminary Survey", "status": "completed", "startDate": "2023-11-05", "endDate": "2024-01-15", "officer": "NHAI Survey", "remarks": "850 Ha surveyed" },
+      { "section": "Sec 6", "title": "Social Impact Assessment", "status": "completed", "startDate": "2024-01-20", "endDate": "2024-05-30", "officer": "Anna University Panel", "remarks": "SIA approved with conditions" },
+      { "section": "Sec 11", "title": "Preliminary Notification", "status": "completed", "startDate": "2024-06-05", "endDate": "2024-06-20", "officer": "Collector, Vellore", "remarks": "TN Gazette notification" },
+      { "section": "Sec 15", "title": "Objections & Hearing", "status": "completed", "startDate": "2024-06-25", "endDate": "2024-10-15", "officer": "Collector, Vellore", "remarks": "220 objections, 15 upheld" },
+      { "section": "Sec 19", "title": "Declaration of Acquisition", "status": "completed", "startDate": "2024-10-20", "endDate": "2024-11-05", "officer": "State Govt.", "remarks": "Declaration for 820 Ha" },
+      { "section": "Sec 23", "title": "Award & Compensation", "status": "in-progress", "startDate": "2024-11-15", "endDate": null, "officer": "CALA, Vellore", "remarks": "1200 of 1450 families compensated" },
+      { "section": "Sec 38", "title": "Possession & Handover", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "Partial possession — 4 parcels in litigation" },
+      { "section": "R&R", "title": "Rehabilitation & Resettlement", "status": "in-progress", "startDate": "2025-01-10", "endDate": null, "officer": "R&R Commissioner, TN", "remarks": "1100 families resettled so far" }
+    ]
+  },
+  {
+    "id": "PRJ-METRO-205",
+    "name": "Mumbai Metro Line 6 (Swami Samarth Nagar – Vikhroli)",
+    "agency": "DMRC",
+    "state": "Maharashtra",
+    "district": "Mumbai Suburban",
+    "status": "Survey",
+    "totalAreaHa": 180,
+    "acquiredAreaHa": 45,
+    "startDate": "2026-01-15",
+    "targetDate": "2028-06-30",
+    "familiesAffected": 3200,
+    "familiesResettled": 120,
+    "budgetCr": 4800,
+    "spentCr": 320,
+    "criticalBottleneck": true,
+    "bottleneckReason": "High-density urban settlement — rehabilitation complex",
+    "overlapWarnings": ["Heritage Zone Buffer", "Slum Rehabilitation Area"],
+    "coordinates": { "lat": 19.1136, "lng": 72.8697 },
+    "milestones": [
+      { "section": "Sec 4", "title": "Preliminary Survey", "status": "in-progress", "startDate": "2026-01-15", "endDate": null, "officer": "MMRDA Survey Wing", "remarks": "Urban cadastral survey — 60% complete" },
+      { "section": "Sec 6", "title": "Social Impact Assessment", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "To be conducted post-survey" },
+      { "section": "Sec 11", "title": "Preliminary Notification", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 15", "title": "Objections & Hearing", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "Expected high objection count" },
+      { "section": "Sec 19", "title": "Declaration of Acquisition", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 23", "title": "Award & Compensation", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 38", "title": "Possession & Handover", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "R&R", "title": "Rehabilitation & Resettlement", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "3200 families require resettlement plan" }
+    ]
+  },
+  {
+    "id": "PRJ-NHAI-155",
+    "name": "Amritsar-Jamnagar Expressway (Section 2)",
+    "agency": "NHAI",
+    "state": "Rajasthan",
+    "district": "Jodhpur",
+    "status": "Declaration",
+    "totalAreaHa": 620,
+    "acquiredAreaHa": 310,
+    "startDate": "2024-07-01",
+    "targetDate": "2027-03-31",
+    "familiesAffected": 780,
+    "familiesResettled": 200,
+    "budgetCr": 1850,
+    "spentCr": 420,
+    "criticalBottleneck": false,
+    "overlapWarnings": ["Army Cantonment Proximity"],
+    "coordinates": { "lat": 26.2389, "lng": 73.0243 },
+    "milestones": [
+      { "section": "Sec 4", "title": "Preliminary Survey", "status": "completed", "startDate": "2024-07-01", "endDate": "2024-09-15", "officer": "NHAI Rajasthan", "remarks": "620 Ha surveyed" },
+      { "section": "Sec 6", "title": "Social Impact Assessment", "status": "completed", "startDate": "2024-09-20", "endDate": "2025-01-10", "officer": "IIPA Delhi Panel", "remarks": "SIA with minor observations" },
+      { "section": "Sec 11", "title": "Preliminary Notification", "status": "completed", "startDate": "2025-01-15", "endDate": "2025-02-01", "officer": "Collector, Jodhpur", "remarks": "Rajasthan Gazette notification" },
+      { "section": "Sec 15", "title": "Objections & Hearing", "status": "completed", "startDate": "2025-02-10", "endDate": "2025-05-20", "officer": "Collector, Jodhpur", "remarks": "95 objections heard, 12 upheld" },
+      { "section": "Sec 19", "title": "Declaration of Acquisition", "status": "in-progress", "startDate": "2025-06-01", "endDate": null, "officer": "State Govt.", "remarks": "Partial declaration — cantonment section pending defence clearance" },
+      { "section": "Sec 23", "title": "Award & Compensation", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "Sec 38", "title": "Possession & Handover", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "—" },
+      { "section": "R&R", "title": "Rehabilitation & Resettlement", "status": "pending", "startDate": null, "endDate": null, "officer": "—", "remarks": "R&R scheme drafted" }
+    ]
+  },
+  {
+    "id": "PRJ-PORT-078",
+    "name": "Vadhavan Port Access Road & Corridor",
+    "agency": "NHAI",
+    "state": "Maharashtra",
+    "district": "Dahanu",
+    "status": "Completed",
+    "totalAreaHa": 320,
+    "acquiredAreaHa": 320,
+    "startDate": "2022-06-01",
+    "targetDate": "2025-03-31",
+    "familiesAffected": 540,
+    "familiesResettled": 540,
+    "budgetCr": 780,
+    "spentCr": 780,
+    "criticalBottleneck": false,
+    "overlapWarnings": [],
+    "coordinates": { "lat": 19.7515, "lng": 72.7463 },
+    "milestones": [
+      { "section": "Sec 4", "title": "Preliminary Survey", "status": "completed", "startDate": "2022-06-01", "endDate": "2022-08-15", "officer": "NHAI Survey", "remarks": "320 Ha surveyed" },
+      { "section": "Sec 6", "title": "Social Impact Assessment", "status": "completed", "startDate": "2022-08-20", "endDate": "2022-12-10", "officer": "TISS Mumbai", "remarks": "SIA completed" },
+      { "section": "Sec 11", "title": "Preliminary Notification", "status": "completed", "startDate": "2022-12-15", "endDate": "2023-01-05", "officer": "Collector, Dahanu", "remarks": "Published in MH Gazette" },
+      { "section": "Sec 15", "title": "Objections & Hearing", "status": "completed", "startDate": "2023-01-10", "endDate": "2023-04-30", "officer": "Collector, Dahanu", "remarks": "180 objections, 22 upheld" },
+      { "section": "Sec 19", "title": "Declaration of Acquisition", "status": "completed", "startDate": "2023-05-10", "endDate": "2023-05-25", "officer": "State Govt.", "remarks": "Full 320 Ha declared" },
+      { "section": "Sec 23", "title": "Award & Compensation", "status": "completed", "startDate": "2023-06-01", "endDate": "2024-01-31", "officer": "CALA, Dahanu", "remarks": "All 540 families compensated" },
+      { "section": "Sec 38", "title": "Possession & Handover", "status": "completed", "startDate": "2024-02-10", "endDate": "2024-09-30", "officer": "Collector, Dahanu", "remarks": "Land handed over to Port Authority" },
+      { "section": "R&R", "title": "Rehabilitation & Resettlement", "status": "completed", "startDate": "2023-09-01", "endDate": "2025-01-15", "officer": "R&R Commissioner, MH", "remarks": "All 540 families resettled" }
+    ]
   }
 ]

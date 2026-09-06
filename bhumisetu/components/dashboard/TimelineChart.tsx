@@ -98,7 +98,7 @@ export default function TimelineChart({ title }: TimelineChartProps) {
                 color: isDark ? '#f8fafc' : '#0f172a',
                 fontSize: '13px',
               }}
-              formatter={(value: number) => [value.toLocaleString('en-IN') + ' Ha', '']}
+              formatter={(value: any) => [Number(value || 0).toLocaleString('en-IN') + ' Ha', '']}
             />
             <Area type="monotone" dataKey="target" stroke="#3B82F6" strokeWidth={2} strokeDasharray="5 5" fill="url(#colorTarget)" name="Target" />
             <Area 

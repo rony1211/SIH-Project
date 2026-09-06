@@ -78,7 +78,7 @@ export default function CompensationTracker({ title }: CompensationTrackerProps)
                 fontSize: '13px',
                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
               }}
-              formatter={(value: number) => [`₹${value.toLocaleString('en-IN')} Cr`, '']}
+              formatter={(value: any) => [`₹${Number(value || 0).toLocaleString('en-IN')} Cr`, '']}
             />
             <Legend wrapperStyle={{ color: isDark ? '#94a3b8' : '#64748b', fontSize: '12px' }} />
           </PieChart>

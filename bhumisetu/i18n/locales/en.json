@@ -41,17 +41,35 @@
     "compensationFlow": "Compensation Flow"
   },
   "projects": {
-    "title": "Project Tracker",
+    "title": "Project Lifecycle Tracker",
+    "subtitle": "Track RFCTLARR Act 2013 statutory milestones across national infrastructure projects",
     "search": "Search projects...",
-    "filterByState": "Filter by State",
-    "filterByStatus": "Filter by Status",
+    "filterByState": "All States",
+    "filterByStatus": "All Statuses",
+    "filterByAgency": "All Agencies",
+    "criticalOnly": "Critical Only",
     "totalArea": "Total Area",
     "acquiredArea": "Acquired Area",
+    "landAcquired": "Land Acquired",
+    "budgetAllocated": "Budget Allocated",
+    "budgetUtilized": "Budget Utilized",
     "budget": "Budget",
     "spent": "Spent",
+    "disbursed": "Disbursed",
     "timeline": "Timeline",
     "status": "Status",
-    "viewDetails": "View Details"
+    "viewDetails": "View Statutory Details",
+    "backToProjects": "Back to Projects",
+    "statutoryTimeline": "RFCTLARR Act 2013 — Statutory Timeline",
+    "milestones": "Milestones",
+    "families": "Families",
+    "resettled": "Resettled",
+    "activeProjects": "Active Projects",
+    "criticalBottlenecks": "Critical Bottlenecks",
+    "gridView": "Grid",
+    "kanbanView": "Kanban",
+    "tableView": "Table",
+    "noProjects": "No projects found matching your criteria."
   },
   "rr": {
     "title": "Rehabilitation & Resettlement Tracker",
@@ -98,5 +116,15 @@
     "compensationDisbursement": "Compensation Disbursement",
     "possessionTaken": "Possession Taken",
     "completed": "Completed"
+  },
+  "documents": {
+    "title": "Secure Document Repository",
+    "subtitle": "Centralized, tamper-proof storage with chain-of-custody tracking",
+    "totalDocuments": "Total Documents",
+    "verified": "Hash Verified",
+    "pendingReview": "Pending Review",
+    "recentUploads": "Recent Uploads",
+    "searchDocuments": "Search documents...",
+    "uploadDocument": "Upload Document"
   }
 }

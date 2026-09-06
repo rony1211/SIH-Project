@@ -41,17 +41,35 @@
     "compensationFlow": "இழப்பீடு ஓட்டம்"
   },
   "projects": {
-    "title": "திட்ட கண்காணிப்பு",
+    "title": "திட்ட வாழ்க்கைச்சுழற்சி கண்காணிப்பு",
+    "subtitle": "தேசிய உள்கட்டமைப்பு திட்டங்களில் RFCTLARR சட்டம் 2013 சட்டப்பூர்வ மைல்கற்களை கண்காணிக்கவும்",
     "search": "திட்டங்களை தேடுங்கள்...",
-    "filterByState": "மாநிலம் மூலம் வடிகட்டு",
-    "filterByStatus": "நிலை மூலம் வடிகட்டு",
+    "filterByState": "அனைத்து மாநிலங்கள்",
+    "filterByStatus": "அனைத்து நிலைகள்",
+    "filterByAgency": "அனைத்து நிறுவனங்கள்",
+    "criticalOnly": "முக்கியமானவை மட்டும்",
     "totalArea": "மொத்த பரப்பளவு",
     "acquiredArea": "கையகப்படுத்திய பரப்பளவு",
+    "landAcquired": "நிலம் கையகப்படுத்தப்பட்டது",
+    "budgetAllocated": "ஒதுக்கீடு செய்யப்பட்ட பட்ஜெட்",
+    "budgetUtilized": "பயன்படுத்தப்பட்ட பட்ஜெட்",
     "budget": "பட்ஜெட்",
     "spent": "செலவு",
+    "disbursed": "விநியோகிக்கப்பட்டது",
     "timeline": "காலவரிசை",
     "status": "நிலை",
-    "viewDetails": "விவரங்களை பார்க்க"
+    "viewDetails": "சட்டப்பூர்வ விவரங்களை பார்க்க",
+    "backToProjects": "திட்டங்களுக்கு திரும்பு",
+    "statutoryTimeline": "RFCTLARR சட்டம் 2013 — சட்டப்பூர்வ காலவரிசை",
+    "milestones": "மைல்கற்கள்",
+    "families": "குடும்பங்கள்",
+    "resettled": "மறுகுடியேற்றம்",
+    "activeProjects": "செயலில் உள்ள திட்டங்கள்",
+    "criticalBottlenecks": "முக்கிய தடைகள்",
+    "gridView": "கிரிட்",
+    "kanbanView": "கன்பான்",
+    "tableView": "அட்டவணை",
+    "noProjects": "உங்கள் அளவுகோல்களுக்கு பொருந்தும் திட்டங்கள் எதுவும் இல்லை."
   },
   "rr": {
     "title": "மறுவாழ்வு & மீள்குடியமர்வு கண்காணிப்பு",
@@ -92,11 +110,21 @@
   },
   "statuses": {
     "gazetteNotification": "அரசிதழ் அறிவிப்பு",
-    "survey": "ஆய்வு",
+    "survey": "கணக்கெடுப்பு",
     "jointMeasurement": "கூட்டு அளவீடு",
-    "awardDisbursement": "விருது & வழங்கல்",
+    "awardDisbursement": "விருது மற்றும் விநியோகம்",
     "compensationDisbursement": "இழப்பீடு வழங்கல்",
-    "possessionTaken": "உடைமை எடுக்கப்பட்டது",
-    "completed": "நிறைவுற்றது"
+    "possessionTaken": "சுவாதீனம் பெறப்பட்டது",
+    "completed": "முடிந்தது"
+  },
+  "documents": {
+    "title": "பாதுகாப்பான ஆவணக் களஞ்சியம்",
+    "subtitle": "உரிமைச் சங்கிலி கண்காணிப்புடன் கூடிய மையப்படுத்தப்பட்ட, சேதப்படுத்த முடியாத சேமிப்பு",
+    "totalDocuments": "மொத்த ஆவணங்கள்",
+    "verified": "ஹாஷ் சரிபார்க்கப்பட்டது",
+    "pendingReview": "மதிப்பாய்வு நிலுவையில் உள்ளது",
+    "recentUploads": "சமீபத்திய பதிவேற்றங்கள்",
+    "searchDocuments": "ஆவணங்களைத் தேடுக...",
+    "uploadDocument": "ஆவணத்தை பதிவேற்றவும்"
   }
 }

@@ -90,7 +90,7 @@ export default function AcquisitionChart({ title }: AcquisitionChartProps) {
                 fontSize: '13px',
                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
               }}
-              formatter={(value: number) => [value.toLocaleString('en-IN') + ' Ha', '']}
+              formatter={(value: any) => [Number(value || 0).toLocaleString('en-IN') + ' Ha', '']}
               cursor={{ fill: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }}
             />
             <Legend wrapperStyle={{ color: tickColor, fontSize: '12px' }} />

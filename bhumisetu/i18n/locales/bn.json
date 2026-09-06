@@ -41,17 +41,35 @@
     "compensationFlow": "ক্ষতিপূরণ প্রবাহ"
   },
   "projects": {
-    "title": "প্রকল্প ট্র্যাকার",
+    "title": "প্রকল্প জীবনচক্র ট্র্যাকার",
+    "subtitle": "জাতীয় অবকাঠামো প্রকল্পে RFCTLARR আইন ২০১৩ এর সংবিধিবদ্ধ মাইলফলক ট্র্যাক করুন",
     "search": "প্রকল্প খুঁজুন...",
-    "filterByState": "রাজ্য অনুযায়ী ফিল্টার",
-    "filterByStatus": "স্থিতি অনুযায়ী ফিল্টার",
+    "filterByState": "সব রাজ্য",
+    "filterByStatus": "সব স্থিতি",
+    "filterByAgency": "সব সংস্থা",
+    "criticalOnly": "শুধু গুরুতর",
     "totalArea": "মোট এলাকা",
     "acquiredArea": "অধিগৃহীত এলাকা",
+    "landAcquired": "ভূমি অধিগ্রহণ",
+    "budgetAllocated": "বাজেট বরাদ্দ",
+    "budgetUtilized": "বাজেট ব্যবহৃত",
     "budget": "বাজেট",
     "spent": "ব্যয়",
+    "disbursed": "বিতরণ",
     "timeline": "সময়সীমা",
     "status": "স্থিতি",
-    "viewDetails": "বিস্তারিত দেখুন"
+    "viewDetails": "সংবিধিবদ্ধ বিবরণ দেখুন",
+    "backToProjects": "প্রকল্পে ফিরে যান",
+    "statutoryTimeline": "RFCTLARR আইন ২০১৩ — সংবিধিবদ্ধ সময়রেখা",
+    "milestones": "মাইলফলক",
+    "families": "পরিবার",
+    "resettled": "পুনর্বাসিত",
+    "activeProjects": "সক্রিয় প্রকল্প",
+    "criticalBottlenecks": "গুরুতর বাধা",
+    "gridView": "গ্রিড",
+    "kanbanView": "কানবান",
+    "tableView": "টেবিল",
+    "noProjects": "আপনার মানদণ্ডের সাথে মিলে এমন কোনো প্রকল্প পাওয়া যায়নি।"
   },
   "rr": {
     "title": "পুনর্বাসন ও পুনর্স্থাপন ট্র্যাকার",
@@ -92,11 +110,21 @@
   },
   "statuses": {
     "gazetteNotification": "গেজেট বিজ্ঞপ্তি",
-    "survey": "সমীক্ষা",
+    "survey": "জরিপ",
     "jointMeasurement": "যৌথ পরিমাপ",
     "awardDisbursement": "পুরস্কার ও বিতরণ",
     "compensationDisbursement": "ক্ষতিপূরণ বিতরণ",
     "possessionTaken": "দখল নেওয়া হয়েছে",
-    "completed": "সম্পূর্ণ"
+    "completed": "সম্পন্ন"
+  },
+  "documents": {
+    "title": "সুরক্ষিত নথি ভান্ডার",
+    "subtitle": "চেইন-অফ-কাস্টডি ট্র্যাকিং সহ কেন্দ্রীভূত, টেম্পার-প্রুফ স্টোরেজ",
+    "totalDocuments": "মোট নথি",
+    "verified": "হ্যাশ যাচাইকৃত",
+    "pendingReview": "পর্যালোচনা অমীমাংসিত",
+    "recentUploads": "সাম্প্রতিক আপলোড",
+    "searchDocuments": "নথি খুঁজুন...",
+    "uploadDocument": "নথি আপলোড করুন"
   }
 }
