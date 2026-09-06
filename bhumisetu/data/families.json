@@ -2,43 +2,946 @@
   {
     "id": "FAM-9982",
     "headOfFamily": "Ramesh Kumar",
+    "aadhaarMasked": "XXXX-XXXX-8421",
+    "familyMembers": 5,
     "projectId": "PRJ-NHAI-001",
+    "projectName": "Delhi-Mumbai Expressway (Section 4)",
     "village": "Vangaon",
-    "category": "Displaced",
-    "entitlements": {
-      "housing": { "status": "Allotted", "details": "Plot No 45, R&R Colony" },
-      "employment": { "status": "Pending", "details": "Awaiting skill training" },
-      "annuity": { "status": "Active", "details": "₹3000/month for 20 years" },
-      "transportationAllowance": { "status": "Paid", "details": "₹50,000 disbursed" }
+    "district": "Palghar",
+    "state": "Maharashtra",
+    "category": "Physically Displaced",
+    "vulnerability": "General",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX4590",
+      "ifsc": "SBIN0001245",
+      "bankName": "State Bank of India",
+      "dbtVerified": true
     },
-    "overallProgress": 75
-  },
-  {
-    "id": "FAM-9983",
-    "headOfFamily": "Sita Devi",
-    "projectId": "PRJ-NHAI-001",
-    "village": "Vangaon",
-    "category": "Affected (Livelihood Loss)",
     "entitlements": {
-      "housing": { "status": "Not Applicable", "details": "" },
-      "employment": { "status": "Provided", "details": "Job at Toll Plaza" },
-      "annuity": { "status": "Pending Approval", "details": "Verification pending" },
-      "oneTimeGrant": { "status": "Paid", "details": "₹5,00,000 disbursed" }
+      "housing": {
+        "status": "Allotted",
+        "details": "Plot 45 (150 sq.m), Vangaon Model R&R Colony",
+        "value": "₹12,50,000",
+        "completedDate": "2026-03-12"
+      },
+      "employment": {
+        "status": "Pending",
+        "details": "Skill training completed — job offer pending with NHAI concessionaire",
+        "value": "Class-IV Employment",
+        "completedDate": null
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "₹3,000/month for 20 years via PFMS DBT",
+        "value": "₹3,000 / mo",
+        "completedDate": "2026-04-01"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Disbursed via DBT on 15-Apr-2026 (Txn: DBT8492019)",
+        "value": "₹50,000",
+        "completedDate": "2026-04-15"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "One-time statutory shifting grant credited",
+        "value": "₹36,000",
+        "completedDate": "2026-04-15"
+      },
+      "cattleShedGrant": {
+        "status": "Not Applicable",
+        "details": "No livestock owned",
+        "value": "₹0",
+        "completedDate": null
+      }
+    },
+    "colonyDetails": {
+      "name": "Vangaon Model R&R Colony",
+      "amenitiesReady": ["Drinking Water", "Electricity", "Internal Roads", "Sanitation"],
+      "possessionHandedOver": true
     },
     "overallProgress": 80
   },
   {
+    "id": "FAM-9983",
+    "headOfFamily": "Sita Devi",
+    "aadhaarMasked": "XXXX-XXXX-1934",
+    "familyMembers": 4,
+    "projectId": "PRJ-NHAI-001",
+    "projectName": "Delhi-Mumbai Expressway (Section 4)",
+    "village": "Vangaon",
+    "district": "Palghar",
+    "state": "Maharashtra",
+    "category": "Economically Affected",
+    "vulnerability": "Widow / BPL Priority",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX2281",
+      "ifsc": "BARB0VANGON",
+      "bankName": "Bank of Baroda",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Not Applicable",
+        "details": "Residential house not acquired; only agricultural parcel acquired",
+        "value": "N/A",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "Delivered",
+        "details": "Appointed at Charoti Toll Plaza Administration",
+        "value": "Toll Plaza Staff",
+        "completedDate": "2026-05-10"
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "₹3,000/month credited regularly to Bank of Baroda account",
+        "value": "₹3,000 / mo",
+        "completedDate": "2026-04-01"
+      },
+      "transportationAllowance": {
+        "status": "Not Applicable",
+        "details": "Physical relocation not required",
+        "value": "₹0",
+        "completedDate": null
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Statutory livelihood grant disbursed (Txn: DBT9021482)",
+        "value": "₹5,00,000",
+        "completedDate": "2026-05-02"
+      },
+      "cattleShedGrant": {
+        "status": "Paid",
+        "details": "Cattle shed replacement assistance disbursed",
+        "value": "₹25,000",
+        "completedDate": "2026-05-14"
+      }
+    },
+    "colonyDetails": {
+      "name": "N/A (In-Situ Livelihood Rehabilitation)",
+      "amenitiesReady": [],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 100
+  },
+  {
     "id": "FAM-10245",
     "headOfFamily": "Mohammed Tariq",
+    "aadhaarMasked": "XXXX-XXXX-6612",
+    "familyMembers": 7,
     "projectId": "PRJ-IRR-042",
+    "projectName": "Ken-Betwa Link Canal & Reservoir",
     "village": "Banda Khurd",
-    "category": "Displaced",
-    "entitlements": {
-      "housing": { "status": "Pending", "details": "Colony under construction" },
-      "employment": { "status": "Not Applicable", "details": "Opted for one-time grant" },
-      "annuity": { "status": "Pending", "details": "Documentation incomplete" },
-      "transportationAllowance": { "status": "Pending", "details": "" }
+    "district": "Panna",
+    "state": "Madhya Pradesh",
+    "category": "Physically Displaced",
+    "vulnerability": "Minority / Low Income",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX9104",
+      "ifsc": "PUNB0048100",
+      "bankName": "Punjab National Bank",
+      "dbtVerified": false
     },
-    "overallProgress": 10
+    "entitlements": {
+      "housing": {
+        "status": "In Progress",
+        "details": "Quarter 28 assigned; plinth construction in progress at Sukra Colony",
+        "value": "₹11,00,000",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "Pending",
+        "details": "Opted for lump-sum ₹5,00,000 grant in lieu of job; awaiting treasury sanction",
+        "value": "₹5,00,000",
+        "completedDate": null
+      },
+      "annuity": {
+        "status": "Pending",
+        "details": "Bank account KYC verification pending with CALA Panna",
+        "value": "₹3,000 / mo",
+        "completedDate": null
+      },
+      "transportationAllowance": {
+        "status": "Pending",
+        "details": "Advance shifting grant sanctioned, pending disbursement",
+        "value": "₹50,000",
+        "completedDate": null
+      },
+      "resettlementGrant": {
+        "status": "Pending",
+        "details": "Pending family member joint verification",
+        "value": "₹36,000",
+        "completedDate": null
+      },
+      "cattleShedGrant": {
+        "status": "Pending",
+        "details": "3 cattle verified by veterinary officer; grant pending",
+        "value": "₹25,000",
+        "completedDate": null
+      }
+    },
+    "colonyDetails": {
+      "name": "Sukra Resettlement Enclave",
+      "amenitiesReady": ["Internal Roads", "Electricity Line"],
+      "possessionHandedOver": false
+    },
+    "overallProgress": 20
+  },
+  {
+    "id": "FAM-10246",
+    "headOfFamily": "Kallu Gond",
+    "aadhaarMasked": "XXXX-XXXX-3341",
+    "familyMembers": 6,
+    "projectId": "PRJ-IRR-042",
+    "projectName": "Ken-Betwa Link Canal & Reservoir",
+    "village": "Daori",
+    "district": "Panna",
+    "state": "Madhya Pradesh",
+    "category": "Physically Displaced",
+    "vulnerability": "ST (Scheduled Tribe) — Priority Sec 41",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX7192",
+      "ifsc": "CBIN0281944",
+      "bankName": "Central Bank of India",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Allotted",
+        "details": "Plot 12 (200 sq.m) with 2.5 acre agricultural land under ST entitlement",
+        "value": "₹18,00,000",
+        "completedDate": "2026-05-18"
+      },
+      "employment": {
+        "status": "In Progress",
+        "details": "Enrolled in Forest Nursery Enterprise programme (NWDA funded)",
+        "value": "Skill & Enterprise Grant",
+        "completedDate": null
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "ST Special Rate: ₹3,750/month (25% higher under Sec 41(6))",
+        "value": "₹3,750 / mo",
+        "completedDate": "2026-05-01"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Disbursed via DBT (Txn: DBT7731920)",
+        "value": "₹62,500",
+        "completedDate": "2026-05-20"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "One-time ST resettlement allowance credited",
+        "value": "₹45,000",
+        "completedDate": "2026-05-20"
+      },
+      "cattleShedGrant": {
+        "status": "Paid",
+        "details": "Cattle shed allowance disbursed for 5 bullocks",
+        "value": "₹25,000",
+        "completedDate": "2026-05-22"
+      }
+    },
+    "colonyDetails": {
+      "name": "Daori Tribal Resettlement Village",
+      "amenitiesReady": ["Drinking Water", "Solar Microgrid", "Community Hall", "Internal Roads", "Primary School"],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 90
+  },
+  {
+    "id": "FAM-11004",
+    "headOfFamily": "Bhavik Patel",
+    "aadhaarMasked": "XXXX-XXXX-9022",
+    "familyMembers": 4,
+    "projectId": "PRJ-RLY-089",
+    "projectName": "Western Dedicated Freight Corridor",
+    "village": "Sachin",
+    "district": "Surat",
+    "state": "Gujarat",
+    "category": "Economically Affected",
+    "vulnerability": "General",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX8830",
+      "ifsc": "HDFC0001048",
+      "bankName": "HDFC Bank",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Not Applicable",
+        "details": "Only strip of commercial land acquired",
+        "value": "N/A",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "Delivered",
+        "details": "Lump-sum compensation grant of ₹5,00,000 paid under Schedule II",
+        "value": "₹5,00,000",
+        "completedDate": "2026-02-14"
+      },
+      "annuity": {
+        "status": "Delivered",
+        "details": "Opted for 1-time lump-sum annuity buyout: ₹5,00,000 credited",
+        "value": "₹5,00,000",
+        "completedDate": "2026-02-14"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Commercial asset shifting allowance paid",
+        "value": "₹50,000",
+        "completedDate": "2026-02-14"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Artisan & commercial rehabilitation grant",
+        "value": "₹50,000",
+        "completedDate": "2026-02-14"
+      },
+      "cattleShedGrant": {
+        "status": "Not Applicable",
+        "details": "Commercial shop unit",
+        "value": "₹0",
+        "completedDate": null
+      }
+    },
+    "colonyDetails": {
+      "name": "N/A (Urban Commercial Settlement)",
+      "amenitiesReady": [],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 100
+  },
+  {
+    "id": "FAM-11005",
+    "headOfFamily": "Dahyabhai Rathod",
+    "aadhaarMasked": "XXXX-XXXX-5519",
+    "familyMembers": 5,
+    "projectId": "PRJ-RLY-089",
+    "projectName": "Western Dedicated Freight Corridor",
+    "village": "Udhna",
+    "district": "Surat",
+    "state": "Gujarat",
+    "category": "Physically Displaced",
+    "vulnerability": "SC (Scheduled Caste) — Priority",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX3402",
+      "ifsc": "BKID0002010",
+      "bankName": "Bank of India",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Allotted",
+        "details": "Flat B-304, GIDC R&R Colony, Sachin",
+        "value": "₹14,00,000",
+        "completedDate": "2026-04-20"
+      },
+      "employment": {
+        "status": "Delivered",
+        "details": "Son appointed as Junior Track Maintenance Associate, DFCCIL",
+        "value": "Railway Employment",
+        "completedDate": "2026-05-15"
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "₹3,000/month credited via DBT on 1st of every month",
+        "value": "₹3,000 / mo",
+        "completedDate": "2026-04-01"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Disbursed via DBT (Txn: DBT5529104)",
+        "value": "₹50,000",
+        "completedDate": "2026-04-25"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Statutory family settlement grant disbursed",
+        "value": "₹36,000",
+        "completedDate": "2026-04-25"
+      },
+      "cattleShedGrant": {
+        "status": "Not Applicable",
+        "details": "Urban displacement",
+        "value": "₹0",
+        "completedDate": null
+      }
+    },
+    "colonyDetails": {
+      "name": "Sachin GIDC R&R Colony",
+      "amenitiesReady": ["Drinking Water", "Electricity", "Paved Roads", "Sewage Treatment", "Primary Health Clinic"],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 100
+  },
+  {
+    "id": "FAM-12401",
+    "headOfFamily": "Maniram Bishnoi",
+    "aadhaarMasked": "XXXX-XXXX-4109",
+    "familyMembers": 8,
+    "projectId": "PRJ-SOL-104",
+    "projectName": "Bhadla Mega Solar Park Phase IV",
+    "village": "Bap",
+    "district": "Phalodi",
+    "state": "Rajasthan",
+    "category": "Economically Affected",
+    "vulnerability": "Marginal Farmer",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX6671",
+      "ifsc": "RMGB0000214",
+      "bankName": "Rajasthan Marudhara Gramin Bank",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Not Applicable",
+        "details": "Pastoral range acquired; residential dhani intact",
+        "value": "N/A",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "In Progress",
+        "details": "Solar panel technician vocational course at ITI Phalodi (80% attendance)",
+        "value": "Solar Park Job Guarantee",
+        "completedDate": null
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "₹3,000/month subsistence annuity via DBT",
+        "value": "₹3,000 / mo",
+        "completedDate": "2026-03-01"
+      },
+      "transportationAllowance": {
+        "status": "Not Applicable",
+        "details": "No residential shifting",
+        "value": "₹0",
+        "completedDate": null
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Pastoral compensation grant",
+        "value": "₹5,00,000",
+        "completedDate": "2026-03-10"
+      },
+      "cattleShedGrant": {
+        "status": "Paid",
+        "details": "Re-fencing allowance for 12 camels & 20 goats",
+        "value": "₹50,000",
+        "completedDate": "2026-03-15"
+      }
+    },
+    "colonyDetails": {
+      "name": "N/A (Pastoral Rehabilitation)",
+      "amenitiesReady": [],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 85
+  },
+  {
+    "id": "FAM-12402",
+    "headOfFamily": "Kamla Meghwal",
+    "aadhaarMasked": "XXXX-XXXX-7729",
+    "familyMembers": 5,
+    "projectId": "PRJ-SOL-104",
+    "projectName": "Bhadla Mega Solar Park Phase IV",
+    "village": "Kanasar",
+    "district": "Phalodi",
+    "state": "Rajasthan",
+    "category": "Physically Displaced",
+    "vulnerability": "SC (Scheduled Caste) — Priority",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX9011",
+      "ifsc": "SBIN0031201",
+      "bankName": "State Bank of India",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "In Progress",
+        "details": "Plot 19, Kanasar Solar Resettlement Hamlet; solar-roof construction ongoing",
+        "value": "₹13,00,000",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "Delivered",
+        "details": "Security personnel deployment at Substation 3",
+        "value": "Solar Park Job",
+        "completedDate": "2026-04-18"
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "₹3,000/month disbursed via APBS DBT",
+        "value": "₹3,000 / mo",
+        "completedDate": "2026-03-01"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Disbursed via DBT (Txn: DBT3381029)",
+        "value": "₹50,000",
+        "completedDate": "2026-03-22"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Statutory family shifting grant",
+        "value": "₹36,000",
+        "completedDate": "2026-03-22"
+      },
+      "cattleShedGrant": {
+        "status": "Paid",
+        "details": "Cattle shed grant disbursed",
+        "value": "₹25,000",
+        "completedDate": "2026-03-25"
+      }
+    },
+    "colonyDetails": {
+      "name": "Kanasar Solar Resettlement Hamlet",
+      "amenitiesReady": ["Solar Power", "Internal Roads", "RO Water Plant"],
+      "possessionHandedOver": false
+    },
+    "overallProgress": 75
+  },
+  {
+    "id": "FAM-13101",
+    "headOfFamily": "Prabhakar Reddy",
+    "aadhaarMasked": "XXXX-XXXX-1184",
+    "familyMembers": 4,
+    "projectId": "PRJ-EXP-067",
+    "projectName": "Bengaluru-Chennai Expressway (Section 1)",
+    "village": "Mulbagal",
+    "district": "Kolar",
+    "state": "Karnataka",
+    "category": "Physically Displaced",
+    "vulnerability": "General",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX4419",
+      "ifsc": "CNRB0001042",
+      "bankName": "Canara Bank",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Allotted",
+        "details": "House No 12, Sri Venkateshwara R&R Nagar, Mulbagal",
+        "value": "₹15,00,000",
+        "completedDate": "2026-01-20"
+      },
+      "employment": {
+        "status": "Delivered",
+        "details": "One-time lump sum grant of ₹5,00,000 disbursed in lieu of job",
+        "value": "₹5,00,000",
+        "completedDate": "2026-01-28"
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "₹3,000/month disbursed via Canara Bank DBT",
+        "value": "₹3,000 / mo",
+        "completedDate": "2026-02-01"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Disbursed via DBT (Txn: DBT6619022)",
+        "value": "₹50,000",
+        "completedDate": "2026-01-25"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "One-time settlement allowance paid",
+        "value": "₹36,000",
+        "completedDate": "2026-01-25"
+      },
+      "cattleShedGrant": {
+        "status": "Paid",
+        "details": "Cattle shed replacement assistance",
+        "value": "₹25,000",
+        "completedDate": "2026-01-30"
+      }
+    },
+    "colonyDetails": {
+      "name": "Sri Venkateshwara R&R Nagar",
+      "amenitiesReady": ["Drinking Water", "Electricity", "Internal Roads", "Community Center", "Primary Health Clinic", "Park"],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 100
+  },
+  {
+    "id": "FAM-13102",
+    "headOfFamily": "Muniyappa K.",
+    "aadhaarMasked": "XXXX-XXXX-9938",
+    "familyMembers": 6,
+    "projectId": "PRJ-EXP-067",
+    "projectName": "Bengaluru-Chennai Expressway (Section 1)",
+    "village": "Bangarapet",
+    "district": "Kolar",
+    "state": "Karnataka",
+    "category": "Physically Displaced",
+    "vulnerability": "SC (Scheduled Caste) — Priority",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX5201",
+      "ifsc": "KARB0000192",
+      "bankName": "Karnataka Bank",
+      "dbtVerified": false
+    },
+    "entitlements": {
+      "housing": {
+        "status": "In Progress",
+        "details": "Plot allocated at Bangarapet Layout; boundary demarcation underway",
+        "value": "₹14,00,000",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "Pending",
+        "details": "Applied for toll plaza support staff; interview scheduled with CALA",
+        "value": "Expressway Support Job",
+        "completedDate": null
+      },
+      "annuity": {
+        "status": "Pending",
+        "details": "Aadhaar NPCI bank mapping pending",
+        "value": "₹3,000 / mo",
+        "completedDate": null
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Physical cheque handed over by Special Land Acquisition Officer",
+        "value": "₹50,000",
+        "completedDate": "2026-04-12"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Initial relocation advance cleared",
+        "value": "₹36,000",
+        "completedDate": "2026-04-12"
+      },
+      "cattleShedGrant": {
+        "status": "Pending",
+        "details": "Veterinary inspection scheduled",
+        "value": "₹25,000",
+        "completedDate": null
+      }
+    },
+    "colonyDetails": {
+      "name": "Bangarapet Expressway R&R Enclave",
+      "amenitiesReady": ["Internal Roads", "Power Lines"],
+      "possessionHandedOver": false
+    },
+    "overallProgress": 40
+  },
+  {
+    "id": "FAM-14001",
+    "headOfFamily": "Satish Chand Sharma",
+    "aadhaarMasked": "XXXX-XXXX-8012",
+    "familyMembers": 5,
+    "projectId": "PRJ-AIR-009",
+    "projectName": "Noida International Airport (Phase II)",
+    "village": "Ranhera",
+    "district": "Gautam Buddha Nagar",
+    "state": "Uttar Pradesh",
+    "category": "Physically Displaced",
+    "vulnerability": "Senior Citizen Head",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX7721",
+      "ifsc": "PUNB0182400",
+      "bankName": "Punjab National Bank",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Allotted",
+        "details": "Sector 22E, Jewar Model Township, Plot 88 (180 sq.m)",
+        "value": "₹22,00,000",
+        "completedDate": "2026-02-28"
+      },
+      "employment": {
+        "status": "Delivered",
+        "details": "Son inducted as Ground Operations Assistant at Yamuna Expressway Authority",
+        "value": "Authority Job",
+        "completedDate": "2026-03-15"
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "₹3,000/month through PFMS direct treasury mandate",
+        "value": "₹3,000 / mo",
+        "completedDate": "2026-03-01"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Disbursed via DBT (Txn: DBT9912048)",
+        "value": "₹50,000",
+        "completedDate": "2026-03-05"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Statutory family settlement grant disbursed",
+        "value": "₹36,000",
+        "completedDate": "2026-03-05"
+      },
+      "cattleShedGrant": {
+        "status": "Paid",
+        "details": "Cattle shed replacement grant disbursed for 4 milch animals",
+        "value": "₹25,000",
+        "completedDate": "2026-03-10"
+      }
+    },
+    "colonyDetails": {
+      "name": "Jewar Model R&R Township",
+      "amenitiesReady": ["Drinking Water", "Underground Power", "Bituminous Roads", "Community Center", "Primary Health Center", "Senior Secondary School", "Children Playground"],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 100
+  },
+  {
+    "id": "FAM-14002",
+    "headOfFamily": "Devender Singh",
+    "aadhaarMasked": "XXXX-XXXX-4493",
+    "familyMembers": 7,
+    "projectId": "PRJ-AIR-009",
+    "projectName": "Noida International Airport (Phase II)",
+    "village": "Kureb",
+    "district": "Gautam Buddha Nagar",
+    "state": "Uttar Pradesh",
+    "category": "Physically Displaced",
+    "vulnerability": "General",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX3891",
+      "ifsc": "SBIN0006721",
+      "bankName": "State Bank of India",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "In Progress",
+        "details": "Plot 104 allotted; construction certificate in verification with YEIDA",
+        "value": "₹20,00,000",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "In Progress",
+        "details": "Skill training in Aviation Cargo Operations underway at Jewar Skill Centre",
+        "value": "Cargo Operations Role",
+        "completedDate": null
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "₹3,000/month disbursed via SBI DBT",
+        "value": "₹3,000 / mo",
+        "completedDate": "2026-04-01"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Disbursed via DBT (Txn: DBT8819033)",
+        "value": "₹50,000",
+        "completedDate": "2026-04-10"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Family displacement allowance disbursed",
+        "value": "₹36,000",
+        "completedDate": "2026-04-10"
+      },
+      "cattleShedGrant": {
+        "status": "In Progress",
+        "details": "Livestock survey verification under review with Tehsildar",
+        "value": "₹25,000",
+        "completedDate": null
+      }
+    },
+    "colonyDetails": {
+      "name": "Jewar Model R&R Township",
+      "amenitiesReady": ["Drinking Water", "Underground Power", "Bituminous Roads", "Community Center", "Primary Health Center"],
+      "possessionHandedOver": false
+    },
+    "overallProgress": 65
+  },
+  {
+    "id": "FAM-15201",
+    "headOfFamily": "Manoj Varma",
+    "aadhaarMasked": "XXXX-XXXX-6601",
+    "familyMembers": 3,
+    "projectId": "PRJ-DMRC-014",
+    "projectName": "Delhi Metro Phase IV (Silver Line)",
+    "village": "Sangam Vihar",
+    "district": "South East Delhi",
+    "state": "Delhi",
+    "category": "Economically Affected",
+    "vulnerability": "Urban Tenant / Small Trader",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX1209",
+      "ifsc": "ICIC0000045",
+      "bankName": "ICICI Bank",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Not Applicable",
+        "details": "Commercial shopfront setback acquired; residential apartment unaffected",
+        "value": "N/A",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "Delivered",
+        "details": "Commercial business disturbance grant of ₹5,00,000 paid",
+        "value": "₹5,00,000",
+        "completedDate": "2026-03-25"
+      },
+      "annuity": {
+        "status": "Delivered",
+        "details": "Lump-sum annuity settlement disbursed",
+        "value": "₹5,00,000",
+        "completedDate": "2026-03-25"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Inventory shifting grant disbursed",
+        "value": "₹50,000",
+        "completedDate": "2026-03-25"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Small shopkeeper statutory assistance",
+        "value": "₹25,000",
+        "completedDate": "2026-03-25"
+      },
+      "cattleShedGrant": {
+        "status": "Not Applicable",
+        "details": "Urban Metro corridor",
+        "value": "₹0",
+        "completedDate": null
+      }
+    },
+    "colonyDetails": {
+      "name": "N/A (Urban Commercial Setback)",
+      "amenitiesReady": [],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 100
+  },
+  {
+    "id": "FAM-16001",
+    "headOfFamily": "Janardhan Patil",
+    "aadhaarMasked": "XXXX-XXXX-9140",
+    "familyMembers": 5,
+    "projectId": "PRJ-PRT-023",
+    "projectName": "Vadhavan Mega Port Rail & Road Connectivity",
+    "village": "Dahanu",
+    "district": "Palghar",
+    "state": "Maharashtra",
+    "category": "Physically Displaced",
+    "vulnerability": "ST (Scheduled Tribe) — Warli Tribe Priority",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX7621",
+      "ifsc": "MAHB0000301",
+      "bankName": "Bank of Maharashtra",
+      "dbtVerified": true
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Allotted",
+        "details": "Plot 07, Dahanu Coastal R&R Enclave, with traditional Warli courtyard design",
+        "value": "₹16,00,000",
+        "completedDate": "2026-05-12"
+      },
+      "employment": {
+        "status": "In Progress",
+        "details": "Enrolled in Maritime Port Logistics Training (VPPL stipend ₹8,000/mo)",
+        "value": "Port Operations Job",
+        "completedDate": null
+      },
+      "annuity": {
+        "status": "Active",
+        "details": "ST Sec 41 rate: ₹3,750/month via DBT",
+        "value": "₹3,750 / mo",
+        "completedDate": "2026-05-01"
+      },
+      "transportationAllowance": {
+        "status": "Paid",
+        "details": "Disbursed via DBT (Txn: DBT4491028)",
+        "value": "₹62,500",
+        "completedDate": "2026-05-15"
+      },
+      "resettlementGrant": {
+        "status": "Paid",
+        "details": "Tribal special resettlement grant disbursed",
+        "value": "₹45,000",
+        "completedDate": "2026-05-15"
+      },
+      "cattleShedGrant": {
+        "status": "Paid",
+        "details": "Fishery gear and boat shed allowance disbursed",
+        "value": "₹50,000",
+        "completedDate": "2026-05-18"
+      }
+    },
+    "colonyDetails": {
+      "name": "Dahanu Coastal R&R Enclave",
+      "amenitiesReady": ["Drinking Water", "Electricity", "Paved Internal Roads", "Community Warli Art Centre", "Fish Landing Jetty"],
+      "possessionHandedOver": true
+    },
+    "overallProgress": 90
+  },
+  {
+    "id": "FAM-16002",
+    "headOfFamily": "Pradeep Tandel",
+    "aadhaarMasked": "XXXX-XXXX-2199",
+    "familyMembers": 6,
+    "projectId": "PRJ-PRT-023",
+    "projectName": "Vadhavan Mega Port Rail & Road Connectivity",
+    "village": "Vadhavan",
+    "district": "Palghar",
+    "state": "Maharashtra",
+    "category": "Physically Displaced",
+    "vulnerability": "Traditional Fisherman",
+    "bankDetails": {
+      "accountNo": "XXXXXXXX8812",
+      "ifsc": "SBIN0000350",
+      "bankName": "State Bank of India",
+      "dbtVerified": false
+    },
+    "entitlements": {
+      "housing": {
+        "status": "Pending",
+        "details": "Site allocation in hearing before CALA Palghar",
+        "value": "₹15,00,000",
+        "completedDate": null
+      },
+      "employment": {
+        "status": "Pending",
+        "details": "Requested modern mechanised trawler support under port CSR R&R scheme",
+        "value": "Fisheries Modernisation Grant",
+        "completedDate": null
+      },
+      "annuity": {
+        "status": "Pending",
+        "details": "Bank passbook KYC re-submission requested by CALA",
+        "value": "₹3,000 / mo",
+        "completedDate": null
+      },
+      "transportationAllowance": {
+        "status": "Pending",
+        "details": "Pending possession notice issuance",
+        "value": "₹50,000",
+        "completedDate": null
+      },
+      "resettlementGrant": {
+        "status": "Pending",
+        "details": "Pending joint inspection",
+        "value": "₹36,000",
+        "completedDate": null
+      },
+      "cattleShedGrant": {
+        "status": "Pending",
+        "details": "Fish drying platform grant pending review",
+        "value": "₹25,000",
+        "completedDate": null
+      }
+    },
+    "colonyDetails": {
+      "name": "Vadhavan Fisherfolk R&R Hamlet",
+      "amenitiesReady": ["Internal Roads"],
+      "possessionHandedOver": false
+    },
+    "overallProgress": 15
   }
 ]
