@@ -81,7 +81,7 @@ export default function DocumentFilters({
               appearance-none cursor-pointer min-w-[160px]"
           >
             {categories.map((cat) => (
-              <option key={cat} value={cat}>{cat}</option>
+              <option key={cat} value={cat} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">{cat}</option>
             ))}
           </select>
         </div>
@@ -97,7 +97,7 @@ export default function DocumentFilters({
               appearance-none cursor-pointer min-w-[130px]"
           >
             {statuses.map((s) => (
-              <option key={s} value={s}>{s}</option>
+              <option key={s} value={s} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">{s}</option>
             ))}
           </select>
         </div>

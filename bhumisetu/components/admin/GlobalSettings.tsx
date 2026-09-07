@@ -39,7 +39,7 @@ export default function GlobalSettings({ initialSettings }: { initialSettings: S
         <p className="text-xs text-muted mt-0.5">Platform-wide system parameters</p>
       </div>
 
-      <div className="flex-1 space-y-6">
+      <div className="flex-1 overflow-y-auto pr-2 space-y-6">
         {/* Toggle Settings */}
         <div className="space-y-4">
           <div className="flex items-center justify-between p-4 rounded-xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5">

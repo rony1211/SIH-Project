@@ -1,8 +1,9 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
-import { HiOutlineMap, HiOutlineAdjustmentsHorizontal } from 'react-icons/hi2';
+import { HiOutlineMap, HiOutlineAdjustmentsHorizontal, HiOutlineMagnifyingGlass } from 'react-icons/hi2';
 
 // Dynamically import the MapViewer with SSR disabled since Leaflet relies on the window object
 const MapViewer = dynamic(() => import('@/components/map/MapViewer'), {
@@ -16,20 +17,68 @@ const MapViewer = dynamic(() => import('@/components/map/MapViewer'), {
 });
 
 export default function MapPage() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchCenter, setSearchCenter] = useState<[number, number] | null>(null);
+  const [isSearching, setIsSearching] = useState(false);
+
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!searchQuery.trim()) return;
+
+    setIsSearching(true);
+    try {
+      const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(searchQuery)}`);
+      const data = await res.json();
+      if (data && data.length > 0) {
+        setSearchCenter([parseFloat(data[0].lat), parseFloat(data[0].lon)]);
+      } else {
+        alert('Location not found. Please try a different search term.');
+      }
+    } catch (err) {
+      console.error('Geocoding error:', err);
+      alert('An error occurred while searching. Please try again later.');
+    } finally {
+      setIsSearching(false);
+    }
+  };
+
   return (
     <div className="flex flex-col h-[calc(100vh-5rem)]">
       {/* Header */}
-      <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="mb-6 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-heading">Geospatial Map Viewer</h1>
           <p className="text-sm text-muted mt-1">Live cadastral mapping, parcel boundaries, and overlap detection</p>
         </div>
-        <div className="flex items-center gap-3">
-          <button className="flex items-center gap-2 px-4 py-2 rounded-xl glass bg-white/50 dark:bg-black/20 text-sm font-medium hover:surface-hover transition-colors">
+        
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+          {/* Global Search Location */}
+          <form onSubmit={handleSearch} className="relative flex items-center w-full sm:w-64 shrink-0">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search location..."
+              className="w-full pl-4 pr-10 py-2 rounded-xl glass bg-white/50 dark:bg-black/20 border border-black/10 dark:border-white/10 text-sm text-heading placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-saffron transition-all shadow-sm"
+            />
+            <button 
+              type="submit" 
+              disabled={isSearching} 
+              className="absolute right-2 p-1.5 rounded-lg text-muted hover:text-saffron disabled:opacity-50 transition-colors"
+            >
+              {isSearching ? (
+                <div className="w-4 h-4 border-2 border-saffron border-t-transparent rounded-full animate-spin" />
+              ) : (
+                <HiOutlineMagnifyingGlass className="w-4 h-4" />
+              )}
+            </button>
+          </form>
+
+          <button className="flex items-center gap-2 px-4 py-2 rounded-xl glass bg-white/50 dark:bg-black/20 text-sm font-medium hover:surface-hover transition-colors shrink-0">
             <HiOutlineAdjustmentsHorizontal className="w-4 h-4" />
             Filters
           </button>
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-black/10 dark:border-white/10 bg-white/50 dark:bg-black/20 text-xs">
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-black/10 dark:border-white/10 bg-white/50 dark:bg-black/20 text-xs shrink-0">
             <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full bg-emerald" /> Acquired</div>
             <div className="flex items-center gap-1.5 ml-2"><div className="w-2.5 h-2.5 rounded-full bg-saffron" /> Notified</div>
             <div className="flex items-center gap-1.5 ml-2"><div className="w-2.5 h-2.5 rounded-full bg-danger" /> Disputed</div>
@@ -49,7 +98,7 @@ export default function MapPage() {
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-saffron/10 rounded-full blur-3xl pointer-events-none" />
         
         <div className="flex-1 relative z-10 rounded-2xl overflow-hidden border border-black/10 dark:border-white/10">
-          <MapViewer />
+          <MapViewer searchCenter={searchCenter} />
         </div>
       </motion.div>
     </div>

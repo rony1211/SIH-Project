@@ -124,9 +124,9 @@ export default function RRFilters({
           className="px-2.5 py-1.5 rounded-lg text-xs bg-black/5 dark:bg-white/5 text-heading
             border border-black/10 dark:border-white/10 focus:outline-none focus:border-saffron max-w-[200px] truncate"
         >
-          <option value="All" className="bg-slate-900 text-white">Project: All Projects</option>
+          <option value="All" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Project: All Projects</option>
           {projectOptions.map((p) => (
-            <option key={p.id} value={p.id} className="bg-slate-900 text-white">
+            <option key={p.id} value={p.id} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
               {p.name}
             </option>
           ))}
@@ -139,9 +139,9 @@ export default function RRFilters({
           className="px-2.5 py-1.5 rounded-lg text-xs bg-black/5 dark:bg-white/5 text-heading
             border border-black/10 dark:border-white/10 focus:outline-none focus:border-saffron"
         >
-          <option value="All" className="bg-slate-900 text-white">Category: All</option>
-          <option value="Physically Displaced" className="bg-slate-900 text-white">Physically Displaced</option>
-          <option value="Economically Affected" className="bg-slate-900 text-white">Economically Affected</option>
+          <option value="All" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Category: All</option>
+          <option value="Physically Displaced" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Physically Displaced</option>
+          <option value="Economically Affected" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Economically Affected</option>
         </select>
 
         {/* Vulnerability */}
@@ -151,9 +151,9 @@ export default function RRFilters({
           className="px-2.5 py-1.5 rounded-lg text-xs bg-black/5 dark:bg-white/5 text-heading
             border border-black/10 dark:border-white/10 focus:outline-none focus:border-saffron"
         >
-          <option value="All" className="bg-slate-900 text-white">Priority: All Groups</option>
-          <option value="SC/ST" className="bg-slate-900 text-white">SC/ST Special Safeguard</option>
-          <option value="Widow" className="bg-slate-900 text-white">Widow / BPL Priority</option>
+          <option value="All" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Priority: All Groups</option>
+          <option value="SC/ST" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">SC/ST Special Safeguard</option>
+          <option value="Widow" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Widow / BPL Priority</option>
         </select>
 
         {/* Compliance Status */}
@@ -163,10 +163,10 @@ export default function RRFilters({
           className="px-2.5 py-1.5 rounded-lg text-xs bg-black/5 dark:bg-white/5 text-heading
             border border-black/10 dark:border-white/10 focus:outline-none focus:border-saffron"
         >
-          <option value="All" className="bg-slate-900 text-white">Compliance: All Statuses</option>
-          <option value="Complete" className="bg-slate-900 text-white">Fully Settled (100%)</option>
-          <option value="In Progress" className="bg-slate-900 text-white">In Progress</option>
-          <option value="Critical Pending" className="bg-slate-900 text-white">Lagging (&lt;30%)</option>
+          <option value="All" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Compliance: All Statuses</option>
+          <option value="Complete" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Fully Settled (100%)</option>
+          <option value="In Progress" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">In Progress</option>
+          <option value="Critical Pending" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Lagging (&lt;30%)</option>
         </select>
 
         {/* Reset */}

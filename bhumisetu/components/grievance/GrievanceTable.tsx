@@ -239,7 +239,7 @@ export default function GrievanceTable({ grievances, onSelectTicket }: Grievance
               border border-black/10 dark:border-white/10 focus:outline-none focus:border-saffron"
           >
             {categories.map((c) => (
-              <option key={c} value={c} className="bg-slate-900 text-white">
+              <option key={c} value={c} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                 Category: {c}
               </option>
             ))}
@@ -256,7 +256,7 @@ export default function GrievanceTable({ grievances, onSelectTicket }: Grievance
               border border-black/10 dark:border-white/10 focus:outline-none focus:border-saffron"
           >
             {statuses.map((s) => (
-              <option key={s} value={s} className="bg-slate-900 text-white">
+              <option key={s} value={s} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                 Status: {s}
               </option>
             ))}
@@ -273,7 +273,7 @@ export default function GrievanceTable({ grievances, onSelectTicket }: Grievance
               border border-black/10 dark:border-white/10 focus:outline-none focus:border-saffron"
           >
             {priorities.map((p) => (
-              <option key={p} value={p} className="bg-slate-900 text-white">
+              <option key={p} value={p} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                 Priority: {p}
               </option>
             ))}

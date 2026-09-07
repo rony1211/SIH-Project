@@ -105,7 +105,7 @@ export default function ProjectFilters({
             focus:outline-none cursor-pointer transition-all duration-200"
         >
           {states.map((s) => (
-            <option key={s} value={s}>{s === 'All' ? (t('projects', 'filterByState') || 'All States') : s}</option>
+            <option key={s} value={s} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">{s === 'All' ? (t('projects', 'filterByState') || 'All States') : s}</option>
           ))}
         </select>
 
@@ -118,7 +118,7 @@ export default function ProjectFilters({
             focus:outline-none cursor-pointer transition-all duration-200"
         >
           {agencies.map((a) => (
-            <option key={a} value={a}>{a === 'All' ? 'All Agencies' : a}</option>
+            <option key={a} value={a} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">{a === 'All' ? 'All Agencies' : a}</option>
           ))}
         </select>
 
@@ -131,7 +131,7 @@ export default function ProjectFilters({
             focus:outline-none cursor-pointer transition-all duration-200"
         >
           {statuses.map((s) => (
-            <option key={s} value={s}>{s === 'All' ? (t('projects', 'filterByStatus') || 'All Statuses') : s}</option>
+            <option key={s} value={s} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">{s === 'All' ? (t('projects', 'filterByStatus') || 'All Statuses') : s}</option>
           ))}
         </select>
 

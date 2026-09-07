@@ -45,7 +45,7 @@ export default function UserManagementTable({ users }: { users: User[] }) {
         </div>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="flex-1 overflow-auto">
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border-b border-black/5 dark:border-white/5 text-xs font-semibold text-muted uppercase tracking-wider bg-black/5 dark:bg-white/5">

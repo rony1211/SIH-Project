@@ -217,7 +217,7 @@ export default function DocumentUploadModal({ isOpen, onClose, onSuccess }: Docu
                         focus:border-saffron/50 outline-none transition-colors text-sm text-heading appearance-none"
                       disabled={uploading}
                     >
-                      {categories.map(c => <option key={c} value={c}>{c}</option>)}
+                      {categories.map(c => <option key={c} value={c} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">{c}</option>)}
                     </select>
                   </div>
 

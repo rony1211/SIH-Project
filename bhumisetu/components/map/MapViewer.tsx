@@ -31,11 +31,25 @@ const getStatusColor = (status: Parcel['status']) => {
   }
 };
 
-export default function MapViewer() {
+function MapController({ center }: { center: [number, number] | null }) {
+  const map = useMap();
+  useEffect(() => {
+    if (center) {
+      map.flyTo(center, 14, { duration: 1.5 });
+    }
+  }, [center, map]);
+  return null;
+}
+
+interface MapViewerProps {
+  searchCenter?: [number, number] | null;
+}
+
+export default function MapViewer({ searchCenter = null }: MapViewerProps) {
   const [mounted, setMounted] = useState(false);
   const [parcels, setParcels] = useState<Parcel[]>([]);
   const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
     initLeaflet();
     setMounted(true);
@@ -73,6 +87,8 @@ export default function MapViewer() {
         style={{ height: '100%', width: '100%', background: 'transparent' }}
         zoomControl={false}
       >
+        <MapController center={searchCenter} />
+        
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

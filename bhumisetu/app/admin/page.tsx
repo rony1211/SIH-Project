@@ -54,7 +54,7 @@ export default function AdminPage() {
   ];
 
   return (
-    <div className="p-4 md:p-6 lg:p-8 space-y-6 max-w-[1600px] mx-auto min-h-[calc(100vh-4rem)] flex flex-col">
+    <div className="p-4 md:p-6 lg:p-8 space-y-4 max-w-[1600px] mx-auto h-[calc(100vh-4rem)] flex flex-col">
       <AdminHeader />
       
       <SystemHealthGrid health={data.systemHealth} />

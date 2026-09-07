@@ -158,9 +158,9 @@ export default function LeaderboardTable({
             border border-black/5 dark:border-white/5 text-heading
             focus:outline-none focus:ring-2 focus:ring-saffron/30"
         >
-          <option value="All">All States</option>
+          <option value="All" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">All States</option>
           {states.map((s) => (
-            <option key={s} value={s}>{s}</option>
+            <option key={s} value={s} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">{s}</option>
           ))}
         </select>
         <div className="flex gap-1.5">

@@ -8,69 +8,80 @@ export interface Parcel {
   coordinates: [number, number][];
 }
 
-// In a real application, this would query a database (e.g., PostgreSQL + PostGIS)
-const parcelsDB: Parcel[] = [
-  {
-    id: 'P-101',
-    owner: 'Ramesh Patel',
-    area: '2.5 Ha',
-    status: 'acquired',
-    coordinates: [
-      [23.0225, 72.5714],
-      [23.0250, 72.5714],
-      [23.0250, 72.5750],
-      [23.0225, 72.5750],
-    ],
-  },
-  {
-    id: 'P-102',
-    owner: 'Suresh Kumar',
-    area: '1.2 Ha',
-    status: 'notified',
-    coordinates: [
-      [23.0250, 72.5714],
-      [23.0270, 72.5714],
-      [23.0270, 72.5740],
-      [23.0250, 72.5750],
-    ],
-  },
-  {
-    id: 'P-103',
+// Coordinates for different hubs
+const GUJARAT_LAT = 23.0250;
+const GUJARAT_LNG = 72.5730;
+
+const JHARKHAND_LAT = 23.3441; // Ranchi (Central Jharkhand)
+const JHARKHAND_LNG = 85.3096;
+
+const owners = [
+  'Ramesh Patel', 'Suresh Kumar', 'Gram Panchayat', 'State Government',
+  'Private Logistics Co.', 'Ashok Desai', 'Reliance Ind.', 'Municipal Corp',
+  'NHAI', 'Adani Ports', 'Kisan Union', 'Local Trust', 'Mehta Family',
+  'Industrial Estate', 'Railway Board'
+];
+
+const generateRandomParcels = (count: number, centerLat: number, centerLng: number, prefix: string, radiusMultiplier: number = 0.15): Parcel[] => {
+  const parcels: Parcel[] = [];
+  const statuses: Parcel['status'][] = ['acquired', 'notified', 'disputed'];
+
+  for (let i = 0; i < count; i++) {
+    // Generate random center for this parcel
+    const latOffset = (Math.random() - 0.5) * radiusMultiplier;
+    const lngOffset = (Math.random() - 0.5) * radiusMultiplier;
+    
+    const lat = centerLat + latOffset;
+    const lng = centerLng + lngOffset;
+
+    // Randomize parcel size (from very small to medium)
+    const sizeLat = 0.001 + Math.random() * 0.003; 
+    const sizeLng = 0.001 + Math.random() * 0.003; 
+
+    const coordinates: [number, number][] = [
+      [lat, lng],
+      [lat + sizeLat, lng],
+      [lat + sizeLat, lng + sizeLng],
+      [lat, lng + sizeLng]
+    ];
+
+    // Add some probability weights (more acquired/notified than disputed)
+    let status = statuses[Math.floor(Math.random() * statuses.length)];
+    const rand = Math.random();
+    if (rand < 0.4) status = 'acquired';
+    else if (rand < 0.8) status = 'notified';
+    else status = 'disputed';
+
+    parcels.push({
+      id: `${prefix}-${1000 + i}`,
+      owner: owners[Math.floor(Math.random() * owners.length)],
+      area: `${(Math.random() * 10 + 0.5).toFixed(1)} Ha`,
+      status,
+      coordinates
+    });
+  }
+
+  // Inject some specific overlapping disputed ones to make it look interesting
+  parcels.push({
+    id: `${prefix}-999`,
     owner: 'Gram Panchayat (Overlap)',
     area: '0.8 Ha',
     status: 'disputed',
     coordinates: [
-      [23.0260, 72.5730],
-      [23.0280, 72.5730],
-      [23.0280, 72.5760],
-      [23.0260, 72.5760],
-    ],
-  },
-  // Let's add a few more to make the API feel richer
-  {
-    id: 'P-104',
-    owner: 'State Government',
-    area: '5.4 Ha',
-    status: 'acquired',
-    coordinates: [
-      [23.0200, 72.5760],
-      [23.0240, 72.5760],
-      [23.0240, 72.5790],
-      [23.0200, 72.5790],
-    ],
-  },
-  {
-    id: 'P-105',
-    owner: 'Private Logistics Co.',
-    area: '3.1 Ha',
-    status: 'notified',
-    coordinates: [
-      [23.0280, 72.5760],
-      [23.0310, 72.5760],
-      [23.0310, 72.5790],
-      [23.0280, 72.5790],
-    ],
-  }
+      [centerLat + 0.001, centerLng],
+      [centerLat + 0.003, centerLng],
+      [centerLat + 0.003, centerLng + 0.003],
+      [centerLat + 0.001, centerLng + 0.003],
+    ]
+  });
+
+  return parcels;
+};
+
+// Generate random parcels distributed across different regions
+const parcelsDB: Parcel[] = [
+  ...generateRandomParcels(40, GUJARAT_LAT, GUJARAT_LNG, 'GJ', 0.15),
+  ...generateRandomParcels(150, JHARKHAND_LAT, JHARKHAND_LNG, 'JH', 3.0) // 3.0 degree span covers the state
 ];
 
 export async function GET() {
