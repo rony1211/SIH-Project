@@ -20,12 +20,20 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
-    localStorage.setItem('bhumisetu-locale', newLocale);
+    try {
+      localStorage.setItem('bhumisetu-locale', newLocale);
+    } catch (e) {
+      // Ignore if localStorage is blocked
+    }
   };
 
   useEffect(() => {
-    const saved = localStorage.getItem('bhumisetu-locale') as Locale | null;
-    if (saved) setLocaleState(saved);
+    try {
+      const saved = localStorage.getItem('bhumisetu-locale') as Locale | null;
+      if (saved) setLocaleState(saved);
+    } catch (e) {
+      // Ignore if localStorage is blocked
+    }
   }, []);
 
   useEffect(() => {
