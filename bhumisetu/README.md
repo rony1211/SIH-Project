@@ -1,6 +1,8 @@
 # BhumiSetu (भूमि-सेतु)
 **Real-Time National Land Acquisition & Management System for End-to-End Digital Monitoring and Decision Support**
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://sih-project-6do9ykcet-rony1211s-projects.vercel.app/)
+
 BhumiSetu is a unified digital platform developed for the Ministry of Rural Development (SIH26016) to streamline land acquisition across India. It provides real-time monitoring, transparent compensation disbursement, and Rehabilitation & Resettlement (R&R) tracking.
 
 ## 🚀 Tech Stack
